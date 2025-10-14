@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 PersonalSite
 
-## Getting Started
+My personal website — built with **Next.js**, **TypeScript**, and **Tailwind CSS**.  
+It’s a fast, modern, and clean portfolio where I showcase who I am, what I’ve built, and what I’m working on.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Features
+
+- 🌗 **Dark / Light mode toggle**
+- ⚡ **Fast and responsive** design with Next.js
+- 🎨 **Tailwind CSS** for clean, easy-to-edit styling
+- 🔧 **TypeScript** for reliability and structure
+- 🌍 Deployed on **Vercel** → [marioauqui.com](https://marioauqui.com)
+
+---
+
+## 🧩 Folder Structure
+
+website/
+│
+├─ 📂 src/
+│ ├─ app/ → Pages and layouts
+│ ├─ components/ → Reusable UI (buttons, toggles, etc.)
+│ ├─ styles/ → Global and custom CSS
+│ └─ lib/ → Helper functions or constants
+│
+├─ 📂 public/ → Static files (favicon, og.png, resume.pdf)
+├─ 📂 config/ → Config files (Next, Tailwind, ESLint, etc.)
+├─ 📂 docs/ → Notes and guides for future updates
+│
+├─ 📄 package.json → Dependencies and scripts
+├─ 📄 .gitignore → Ignored files/folders
+└─ 📄 README.md → You’re here
+
+---
+
+## 🛠️ Run Locally
+
+1. **Clone the repository**
+
+git clone https://github.com/marioauqui/PersonalSite.git
+
+cd PersonalSite
+
+2. **Install dependencies**
+
+npm install
+
+3. **Start the development server**
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Visit → [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build for Production
 
-## Learn More
+npm run build
+npm run start
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧰 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + PostCSS
+- **Deployment:** Vercel
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧠 Future Plans
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Add **About Me** and **Projects** pages
+- Improve **SEO** and meta tags
+- Add animations and transitions with **Framer Motion**
+
+---
+
+## 👤 Author
+
+**Mario Auqui**  
+🌐 [marioauqui.com](https://marioauqui.com)  
+💼 [LinkedIn](https://linkedin.com/in/marioauqui)  
+📧 [mario.auqui@gmail.com](mailto:mario.auqui@gmail.com)
