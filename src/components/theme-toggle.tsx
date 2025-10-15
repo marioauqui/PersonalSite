@@ -1,21 +1,19 @@
+// src/components/theme-toggle.tsx
 "use client";
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
-  // Wait until mounted to avoid SSR/CSR mismatch
   useEffect(() => setMounted(true), []);
 
-  // Render a neutral button during SSR / before mount
   if (!mounted) {
     return (
       <button
         aria-label="Toggle theme"
-        className="px-3 py-1.5 rounded-xl border text-sm hover:opacity-80 transition"
+        className="px-3 py-1.5 rounded-xl border text-sm"
       >
         Theme
       </button>

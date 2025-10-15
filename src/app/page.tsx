@@ -1,8 +1,10 @@
+// src/app/page.tsx
 import ThemeToggle from "@/components/theme-toggle";
+
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <main className="min-h-screen">
       {/* Navbar */}
       <header className="sticky top-0 z-10 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-gray-950/70">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -20,6 +22,8 @@ export default function Home() {
         </div>
       </header>
 
+    
+
       {/* Hero Section */}
       <section id="home" className="max-w-5xl mx-auto px-4 pt-16 pb-10">
         <div className="grid md:grid-cols-5 gap-8 items-center">
@@ -34,7 +38,7 @@ export default function Home() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="px-5 py-3 rounded-2xl border border-gray-900 hover:bg-gray-900 hover:text-white transition"
+                className="px-5 py-3 rounded-2xl border border-gray-900 hover:bg-gray-900 hover:text-white transition dark:border-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900"
               >
                 See projects
               </a>
