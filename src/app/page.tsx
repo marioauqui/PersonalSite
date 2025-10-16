@@ -6,17 +6,19 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       {/* Navbar */}
-      <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-gray-950/70 border-b border-gray-100 dark:border-gray-800">
+      <header className="sticky top-0 z-20 backdrop-blur bg-gray-50/90 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#home" className="font-extrabold tracking-tight text-lg">Mario Auqui</a>
           <div className="flex items-center gap-5">
             <nav className="hidden sm:flex gap-6 text-sm">
+              <a href="#about" className="hover:opacity-70">About</a>
               <a href="#projects" className="hover:opacity-70">Projects</a>
               <a href="#research" className="hover:opacity-70">Research</a>
               <a href="#experience" className="hover:opacity-70">Experience</a>
               <a href="#skills" className="hover:opacity-70">Skills</a>
               <a href="#education" className="hover:opacity-70">Education</a>
-              <a href="#resume" className="hover:opacity-70">Résumé</a>
+              <a href="#resume" className="hover:opacity-70">Resume</a>
               <a href="#contact" className="hover:opacity-70">Contact</a>
             </nav>
             <ThemeToggle />
@@ -25,13 +27,15 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section id="home" className="max-w-5xl mx-auto px-4 pt-16 pb-10">
-        <div className="grid md:grid-cols-5 gap-8 items-center">
-          <div className="md:col-span-3">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Builder, researcher, and aspiring SWE —
-              <span className="block">based on the East Coast.</span>
-            </h1>
+    <section 
+      id="home" 
+      className=" bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 relative left-1/2 right-1/2 -mx-[50vw] w-screen">
+      <div className="max-w-7xl mx-auto px-5 pt-16 pb-16">        
+        <div className="grid md:grid-cols-4 gap-y-6 md:gap-x-12 items-center">
+          <div className="md:col-span-3 md:pr-10">
+            <h1 className="text-[1.75rem] md:text-[2.5rem] font-extrabold leading-tight">
+              Computer Science and Entrepreneurship              
+            </h1>                  
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
               Senior CS @ Wake Forest (Dec 2025). I’m into computer vision, clean UX, and turning ideas into shipped software.
             </p>
@@ -53,7 +57,7 @@ export default function Home() {
                 className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 transition"
                 target="_blank" rel="noreferrer"
               >
-                Download résumé
+                Download resume
               </a>
               <a
                 href="https://github.com/marioauqui"
@@ -75,8 +79,8 @@ export default function Home() {
               <li>React • PyTorch • TensorFlow • Keras • Pandas • NumPy</li>
             </ul>
           </div>
-          <div className="md:col-span-2">
-            <div className="aspect-square rounded-3xl border border-gray-200 dark:border-gray-800 shadow-sm grid place-items-center overflow-hidden">
+          <div className="md:col-span-1 flex justify-end ml-auto">
+            <div className="aspect-square max-w-[250px] md:max-w-[300px] rounded-3xl border border-gray-200 dark:border-gray-800 shadow-sm grid place-items-center overflow-hidden">
               {/* ✅ headshot wired up */}
               <Image
                 src="/headshot.jpg"      // file lives at public/headshot.jpg
@@ -85,16 +89,35 @@ export default function Home() {
                 height={1200}
                 className="h-full w-full object-cover"
                 priority
-                quality={95}
+                quality={100}
               />
             </div>
           </div>
         </div>
+        </div>
       </section>
+
+      {/* About Me */}
+<section id="about" className="max-w-5xl mx-auto px-4 pt-16 pb-16 ">
+  <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/60 backdrop-blur p-6">
+    <h2 className="text-2xl font-bold mb-4">About Me</h2>
+    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
+      I’m Mario Auqui — a Computer Science major at Wake Forest University with an
+      entrepreneurial mindset. I enjoy building practical, user-focused software and
+      exploring the intersection between technology and business. My interests include
+      computer vision, product design, and AI applications that solve real-world problems.
+    </p>
+
+    <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
+      Outside of tech, I’m passionate about personal growth, fitness, and travel. I love
+      connecting with people who are curious, creative, and driven to build meaningful things.
+    </p>
+  </div>
+</section>
 
       {/* Projects */}
       <section id="projects" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 py-16">
+        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
           <h2 className="text-2xl font-bold">Projects</h2>
           <p className="text-gray-600 dark:text-gray-300 mt-2">A few things I’ve built recently.</p>
           <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -133,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* Research */}
-      <section id="research" className="max-w-5xl mx-auto px-4 py-16">
+      <section id="research" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
         <h2 className="text-2xl font-bold">Research</h2>
         <p className="text-gray-600 dark:text-gray-300 mt-2">
           URECA-funded project in Dr. Pauca’s lab on tropical forest palm detection and domain generalization.
@@ -146,7 +169,7 @@ export default function Home() {
 
       {/* Experience (resume-style bullets) */}
       <section id="experience" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 py-16">
+        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
           <h2 className="text-2xl font-bold">Experience</h2>
 
           {/* Research Fellow */}
@@ -193,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="max-w-5xl mx-auto px-4 py-16">
+      <section id="skills" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
         <h2 className="text-2xl font-bold">Technical Skills</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6 text-sm">
           <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
@@ -217,7 +240,7 @@ export default function Home() {
 
       {/* Education */}
       <section id="education" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 py-16">
+        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
           <h2 className="text-2xl font-bold">Education</h2>
           <div className="mt-6 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 text-sm">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -230,8 +253,8 @@ export default function Home() {
       </section>
 
       {/* Resume embed */}
-      <section id="resume" className="max-w-5xl mx-auto px-4 py-16">
-        <h2 className="text-2xl font-bold">Résumé</h2>
+      <section id="resume" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
+        <h2 className="text-2xl font-bold">Resume</h2>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">View or download a recent PDF copy.</p>
         <div className="mt-4 flex gap-3">
           <a
@@ -259,21 +282,24 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="max-w-5xl mx-auto px-4 py-16">
-        <h2 className="text-2xl font-bold">Contact</h2>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
-          Email: <a className="underline" href="mailto:marioauqui.contact@gmail.com">marioauqui.contact@gmail.com</a> • {" "}
-          LinkedIn: <a className="underline" href="https://linkedin.com/in/marioauqui" target="_blank" rel="noreferrer">/in/marioauqui</a> • {" "}
-          GitHub: <a className="underline" href="https://github.com/marioauqui" target="_blank" rel="noreferrer">@marioauqui</a>
-        </p>
-      </section>
+      <section id="contact" className=" bg-gray-50 border-t border-gray-200 dark:bg-gray-900 dark:border-gray-800 ">
+        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
+          <h2 className="text-2xl font-bold">Contact</h2>
+          <p className="mt-2 text-gray-600 dark:text-gray-300">
+            Email: <a className="underline" href="mailto:marioauqui.contact@gmail.com">marioauqui.contact@gmail.com</a> • {" "}
+            LinkedIn: <a className="underline" href="https://linkedin.com/in/marioauqui" target="_blank" rel="noreferrer">/in/marioauqui</a> • {" "}
+            GitHub: <a className="underline" href="https://github.com/marioauqui" target="_blank" rel="noreferrer">@marioauqui</a>
+          </p>
+        </div>
+      
 
       {/* Footer */}
-      <footer className="py-10">
+      <footer className=" pb-16 pt-10">
         <div className="max-w-5xl mx-auto px-4 text-xs text-gray-500 dark:text-gray-400">
           © {new Date().getFullYear()} Mario Auqui. All rights reserved.
         </div>
       </footer>
+      </section>
     </main>
   );
 }
