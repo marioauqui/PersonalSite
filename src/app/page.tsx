@@ -37,7 +37,7 @@ export default function Home() {
               Computer Science and Entrepreneurship              
             </h1>                  
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              Senior CS @ Wake Forest (Dec 2025). I’m into computer vision, clean UX, and turning ideas into shipped software.
+             Senior at Wake Forest University with interests in Software Engineering, Artificial Intelligence, and Innovation
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -73,11 +73,7 @@ export default function Home() {
               >
                 LinkedIn
               </a>
-            </div>
-            <ul className="mt-6 flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
-              <li>Python • Java • JS/TS • SQL • C • HTML • CSS • Linux</li>
-              <li>React • PyTorch • TensorFlow • Keras • Pandas • NumPy</li>
-            </ul>
+            </div>     
           </div>
           <div className="md:col-span-1 flex justify-end ml-auto">
             <div className="aspect-square max-w-[250px] md:max-w-[300px] rounded-3xl border border-gray-200 dark:border-gray-800 shadow-sm grid place-items-center overflow-hidden">
@@ -98,22 +94,37 @@ export default function Home() {
       </section>
 
       {/* About Me */}
-<section id="about" className="max-w-5xl mx-auto px-4 pt-16 pb-16 ">
-  <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/60 backdrop-blur p-6">
-    <h2 className="text-2xl font-bold mb-4">About Me</h2>
-    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
-      I’m Mario Auqui — a Computer Science major at Wake Forest University with an
-      entrepreneurial mindset. I enjoy building practical, user-focused software and
-      exploring the intersection between technology and business. My interests include
-      computer vision, product design, and AI applications that solve real-world problems.
+<section id="about" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
+  <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-700 dark:text-gray-300 space-y-6">
+    <h2 className="text-2xl font-bold mb-6">About Me</h2>
+
+    <p className="leading-8">
+      My name is Mario Auqui, and I’m currently a senior at Wake Forest University, graduating in December 2025.
+      After graduation, I plan to spend a few months traveling across the country, exploring places like California,
+      Texas, and Washington State to meet new people, work on personal projects, and begin a new chapter in my life
+      before starting a full-time role.
     </p>
 
-    <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
-      Outside of tech, I’m passionate about personal growth, fitness, and travel. I love
-      connecting with people who are curious, creative, and driven to build meaningful things.
+    <p className="leading-8">
+      During my time in college, I’ve had the opportunity to work on summer research with a professor using object
+      detection models for Amazon forest conservation, intern at The Clearing House on the Innovation and Machine
+      Learning team, and intern at Atlantic General Construction in project management.
+    </p>
+
+    <p className="leading-8">
+      I’d describe myself as someone who loves to learn, constantly asks questions, and enjoys understanding how and
+      why things work. I see myself as a leader, but also as someone who thrives in collaborative environments.
+    </p>
+
+    <p className="leading-8">
+      Outside of work, you can usually find me training at the gym, rolling in Brazilian Jiu-Jitsu, exploring nature,
+      reading, or capturing moments on my mirrorless camera. Other times, I’m at a cat café with a good cup of coffee
+      or already on the open road, heading toward my next destination. I’m always open to connecting, so feel free
+      to reach out, I’d love to chat!
     </p>
   </div>
 </section>
+
 
       {/* Projects */}
       <section id="projects" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
