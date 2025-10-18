@@ -1,35 +1,41 @@
-// src/components/theme-toggle.tsx
 "use client";
 
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const { setTheme, resolvedTheme, theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
-  if (!mounted) {
-    return (
-      <button
-        aria-label="Toggle theme"
-        className="px-3 py-1.5 rounded-xl border text-sm"
-      >
-        Theme
-      </button>
-    );
-  }
+  // Load saved theme or system preference
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored === "light" || stored === "dark") {
+      setTheme(stored);
+      document.documentElement.classList.remove("light-theme", "dark-theme");
+      document.documentElement.classList.add(`${stored}-theme`);
+    } else {
+      // default dark theme
+      document.documentElement.classList.add("dark-theme");
+      setTheme("dark");
+    }
+  }, []);
 
-  const isDark = resolvedTheme === "dark";
+  // Toggle handler
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    document.documentElement.classList.remove("light-theme", "dark-theme");
+    document.documentElement.classList.add(`${newTheme}-theme`);
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
 
   return (
     <button
       aria-label="Toggle theme"
-      onClick={() => setTheme(isDark ? "light" : "dark")}
+      onClick={toggleTheme}
       className="px-3 py-1.5 rounded-xl border text-sm hover:opacity-80 transition"
-      title={isDark ? "Switch to light" : "Switch to dark"}
+      title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
     >
-      {isDark ? "🌞 Light" : "🌙 Dark"}
+      {theme === "dark" ? "🌞 Light" : "🌚 Dark"}
     </button>
   );
 }

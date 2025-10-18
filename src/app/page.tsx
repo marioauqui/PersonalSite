@@ -126,45 +126,71 @@ export default function Home() {
 </section>
 
 
-      {/* Projects */}
-      <section id="projects" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-          <h2 className="text-2xl font-bold">Projects</h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-2">A few things I’ve built recently.</p>
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            <article className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition">
-              <h3 className="font-semibold">Palm-Tree Detection — PRISM</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
-                YOLO-based detector tuned to generalize from Ecuador to Iquitos, Peru.
-                Focus on patch-based inference and confusion-matrix analysis.
-              </p>
-              <ul className="mt-3 text-xs text-gray-500 dark:text-gray-400 list-disc pl-5">
-                <li>mAP, precision/recall, F1</li>
-                <li>OpenCV, PyTorch, Ultralytics</li>
-              </ul>
-              <div className="mt-3 flex gap-3 text-sm">
-                <a href="#" className="underline">Code</a>
-                <a href="#" className="underline">Paper/Poster</a>
-                <a href="#" className="underline">Demo</a>
-              </div>
-            </article>
+{/* Projects */}
+<section id="projects" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+  <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
+    <h2 className="text-2xl font-bold">Projects</h2>
 
-            <article className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition">
-              <h3 className="font-semibold">AI-Driven Email Client (Team Project)</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
-                Web email client that auto-organizes inboxes using content-aware classification and summarization.
-              </p>
-              <ul className="mt-3 text-xs text-gray-500 dark:text-gray-400 list-disc pl-5">
-                <li>React, Gmail API</li>
-                <li>5 Agile sprints • smart replies • categorization</li>
-              </ul>
-              <div className="mt-3 flex gap-3 text-sm">
-                <a href="#" className="underline">Code</a>
-              </div>
-            </article>
-          </div>
+    <div className="mt-8 grid md:grid-cols-2 gap-6">
+
+      {/* Portfolio Website */}
+      <article className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition">
+        <h3 className="font-semibold">Personal Portfolio Website</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+          Responsive portfolio website built with Next.js, React, and Tailwind CSS to showcase my work,
+          projects, and experience. Includes dark mode, smooth animations, and optimized SEO.
+        </p>
+        <ul className="mt-3 text-xs text-gray-500 dark:text-gray-400 list-disc pl-5">
+          <li>Next.js, React, Tailwind CSS</li>
+          <li>Vercel deployment • Dark/Light theme toggle</li>
+          <li>Custom design and animations using Framer Motion</li>
+        </ul>
+        <div className="mt-3 flex gap-3 text-sm">
+          <a
+            href="https://marioauqui.com"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Live Site
+          </a>
         </div>
-      </section>
+      </article>
+
+      {/* PRISM Palm Detection */}
+      <article className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition">
+        <h3 className="font-semibold">Palm-Tree Detection — PRISM</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+          YOLO-based detector tuned to generalize from Ecuador to Iquitos, Peru.
+          Focus on patch-based inference and confusion-matrix analysis for improved model performance.
+        </p>
+        <ul className="mt-3 text-xs text-gray-500 dark:text-gray-400 list-disc pl-5">
+          <li>mAP, precision/recall, F1</li>
+          <li>OpenCV, PyTorch, Ultralytics</li>
+        </ul>
+        <div className="mt-3 flex gap-3 text-sm">
+          <a
+            href="/MarioUrecaPoster.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Poster
+          </a>
+          <a
+            href="https://photostories.wfu.edu/minds-in-motion"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            WFU Project Page
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 
       {/* Research */}
       <section id="research" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
