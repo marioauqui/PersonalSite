@@ -16,7 +16,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Mario Auqui",
-  description: "Portfolio website of Mario Auqui ",
+  description: "Portfolio website of Mario Auqui",
+  openGraph: {
+    title: "Mario Auqui",
+    description: "Computer Science student and Research Fellow at Wake Forest University.",
+    url: "https://marioauqui.com",
+    siteName: "Mario Auqui Portfolio",
+    images: [
+      {
+        url: "https://marioauqui.com/mario-auqui-headshot.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "Mario Auqui professional headshot portrait",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -26,20 +42,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* ✅ Structured data to help Google associate your image with your name */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Mario Auqui",
+              url: "https://marioauqui.com",
+              image: "https://marioauqui.com/mario-auqui-headshot.jpg",
+              jobTitle: "Computer Science Student and Research Fellow",
+              affiliation: "Wake Forest University",
+              sameAs: [
+                "https://www.linkedin.com/in/marioauqui",
+                "https://github.com/marioauqui",
+              ],
+            }),
+          }}
+        />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-300`}
       >
-        {/*
-          Inline script to prevent theme flash on first paint.
-          It runs before React hydration and sets the `dark` class on <html>
-          based on localStorage or prefers-color-scheme.
-        */}
+        {/* Prevent theme flash */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `;(function(){try{var theme=localStorage.getItem('theme');var hasTheme=typeof theme==='string';if(hasTheme){if(theme==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}else{if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}}catch(e){}})()`
+            __html: `;(function(){try{var theme=localStorage.getItem('theme');var hasTheme=typeof theme==='string';if(hasTheme){if(theme==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}else{if(window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}}catch(e){}})()`,
           }}
         />
-        {/* Providers wraps everything (client-side ThemeProvider, etc.) */}
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -79,8 +79,8 @@ export default function Home() {
             <div className="aspect-square w-[220px] sm:w-[240px] md:w-[300px] rounded-3xl border border-gray-300 dark:border-gray-800 shadow-sm overflow-hidden">
               {/* ✅ headshot wired up */}
               <Image
-                src="/headshot.jpg"      // file lives at public/headshot.jpg
-                alt="Mario Auqui headshot"
+                src="/mario-auqui-headshot.jpg"     
+                alt="Mario Auqui professional headshot portrait"
                 width={1200}
                 height={1200}
                 className="h-full w-full object-cover"
