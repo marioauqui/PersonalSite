@@ -93,11 +93,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Me */}
+{/* About Me */}
 <section id="about" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-  <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-100/80 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-6">
-    <h2 className="text-2xl font-bold mb-6">About Me</h2>
+  {/* Heading outside and above the card */}
+  <h2 className="text-2xl font-bold mb-4">About Me</h2>
 
+  {/* Card content (visually separate) */}
+  <div className="mt-3 rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-100/80 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-6 shadow-sm">
     <p className="leading-8">
       My name is Mario Auqui, and I’m currently a senior at Wake Forest University, graduating in December 2025.
       After graduation, I plan to spend a few months traveling across the country, exploring places like California,
@@ -194,17 +196,17 @@ export default function Home() {
 
 
 {/* Experience Section */}
-<section id="experience" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-  <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-100/80 dark:bg-gray-900/40 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-10">
-    <h2 className="text-2xl font-bold mb-6">Experience</h2>
+<section id="experience" className="max-w-5xl mx-auto px-4 pt-20 pb-20">
+  <div className="space-y-10"> {/* Adds spacing between each article */}
+    <h2 className="text-3xl font-bold mb-10">Experience</h2>
 
     {/* Research Fellow */}
-    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="font-semibold">Undergraduate Research Fellow — Wake Forest University</h3>
+    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-6 transition hover:shadow-md">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <h3 className="font-semibold text-lg">Undergraduate Research Fellow — Wake Forest University</h3>
         <span className="text-xs text-gray-500">May 2025 – Present • Winston-Salem, NC</span>
       </div>
-      <ul className="mt-2 list-disc pl-5 text-sm text-gray-800 dark:text-gray-300 space-y-1.5">
+      <ul className="mt-3 list-disc pl-6 text-sm text-gray-800 dark:text-gray-300 space-y-2">
         <li>Applied computer vision and object detection to analyze aerial imagery; mapped tree distributions in complex environments.</li>
         <li>Fine-tuned YOLOv8–YOLOv12 in Python/PyTorch to improve detection under dense canopy and variable lighting.</li>
         <li>Built scalable data pipelines and labeled 1,200+ image patches with Roboflow to accelerate model training/eval.</li>
@@ -214,12 +216,12 @@ export default function Home() {
     </article>
 
     {/* ML Intern */}
-    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="font-semibold">Machine Learning Intern — The Clearing House</h3>
+    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-6 transition hover:shadow-md">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <h3 className="font-semibold text-lg">Machine Learning Intern — The Clearing House</h3>
         <span className="text-xs text-gray-500">May 2024 – Aug 2024 • New York, NY</span>
       </div>
-      <ul className="mt-2 list-disc pl-5 text-sm text-gray-800 dark:text-gray-300 space-y-1.5">
+      <ul className="mt-3 list-disc pl-6 text-sm text-gray-800 dark:text-gray-300 space-y-2">
         <li>Built and deployed an AWS SageMaker model to forecast weekly pre-funding requirements for banks.</li>
         <li>Engineered an end-to-end data pipeline with Python, Jupyter, and S3 on one year of CHIPS transaction data.</li>
         <li>Achieved 85%+ predictive accuracy through hyperparameter tuning and evaluation; supported operations covering most U.S. wire volume.</li>
@@ -228,12 +230,12 @@ export default function Home() {
     </article>
 
     {/* PM Intern */}
-    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="font-semibold">Project Management Intern — Atlantic General Construction</h3>
+    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-6 transition hover:shadow-md">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <h3 className="font-semibold text-lg">Project Management Intern — Atlantic General Construction</h3>
         <span className="text-xs text-gray-500">May 2023 – Aug 2023 • New York, NY</span>
       </div>
-      <ul className="mt-2 list-disc pl-5 text-sm text-gray-800 dark:text-gray-300 space-y-1.5">
+      <ul className="mt-3 list-disc pl-6 text-sm text-gray-800 dark:text-gray-300 space-y-2">
         <li>Led day-to-day project workflows in owner’s absence; delegated tasks and resolved blockers to ensure on-time delivery.</li>
         <li>Interfaced with clients and cross-functional teams; handled 5–10 weekly inquiries with transparent updates.</li>
       </ul>
@@ -242,11 +244,40 @@ export default function Home() {
 </section>
 
 
+
+{/* Skills */}
+    <section id="skills" className="bg-gray-100 border-y border-gray-300 dark:bg-gray-900 dark:border-gray-800">
+        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
+          <div className="">
+        <h2 className="text-2xl font-bold">Skills</h2>
+        <div className="mt-6 grid md:grid-cols-2 gap-6 text-sm">
+          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 className="font-semibold mb-2">Programming Languages</h3>
+            <p className="text-gray-700 dark:text-gray-300">Python, Java, JavaScript/TypeScript, SQL, C, HTML, CSS, HTML, SQL, R Linux</p>
+          </div>
+          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 className="font-semibold mb-2">Libraries & Frameworks</h3>
+            <p className="text-gray-700 dark:text-gray-300">React, TensorFlow, PyTorch, Keras, Pandas, NumPy, Matplotlib, Flask</p>
+          </div>
+          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 className="font-semibold mb-2">Tools & Methods</h3>
+            <p className="text-gray-700 dark:text-gray-300">AWS, Azure, Docker, Git, Agile/Scrum, Jira, Figma</p>
+          </div>
+          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
+            <h3 className="font-semibold mb-2">Software</h3>
+            <p className="text-gray-700 dark:text-gray-300">MS Office (Excel, Word, PowerPoint, Outlook), Confluence, SharePoint</p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
+
+
       {/* Education */}
-      <section id="education" className="bg-gray-100 border-y border-gray-300 dark:bg-gray-900 dark:border-gray-800">
+      <section id="education" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
         <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
           <h2 className="text-2xl font-bold">Education</h2>
-          <div className="mt-6 rounded-2xl border border-gray-300 dark:border-gray-800 p-5 text-sm">
+          <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-6 transition hover:shadow-md">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="font-semibold">Wake Forest University — B.S. in Computer Science, Entrepreneurship Minor</h3>
               <span className="text-xs text-gray-500">Dec 2025 • Winston-Salem, NC</span>
@@ -256,37 +287,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Resume embed */}
-      <section id="resume" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-        <h2 className="text-2xl font-bold">Resume</h2>
-        <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">View or download a recent PDF copy.</p>
-        <div className="mt-4 flex gap-3">
-          <a
-            href="/Mario_s_Resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm"
-          >
-            Open PDF in new tab
-          </a>
-          <a
-            href="/Mario_s_Resume.pdf"
-            download
-            className="px-4 py-2 rounded-xl border border-gray-900 hover:bg-gray-900 hover:text-white dark:border-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 text-sm"
-          >
-            Download PDF
-          </a>
-        </div>
-        <div className="mt-6 rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800">
-          {/* Embedded viewer (works best when the PDF is placed in /public) */}
-          <object data="/Mario_s_Resume.pdf" type="application/pdf" className="w-full h-[80vh]">
-            <iframe src="/Mario_s_Resume.pdf" className="w-full h-[80vh]" title="Mario Auqui Resume" />
-          </object>
-        </div>
-      </section>
+ {/* Resume — GRAY band (same as Skills/Projects/About) */}
+<section
+  id="resume"
+  className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-gray-100 border-y border-gray-300 dark:bg-gray-900 dark:border-gray-800"
+>
+  <div className="max-w-5xl mx-auto px-4 py-16">
+    <h2 className="text-2xl font-bold">Resume</h2>
+    <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+      View or download a recent PDF copy.
+    </p>
+
+    <div className="mt-4 flex gap-3">
+      <a
+        href="/Mario_s_Resume.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm"
+      >
+        Open PDF in new tab
+      </a>
+      <a
+        href="/Mario_s_Resume.pdf"
+        download
+        className="px-4 py-2 rounded-xl border border-gray-900 hover:bg-gray-900 hover:text-white dark:border-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 text-sm"
+      >
+        Download PDF
+      </a>
+    </div>
+
+    {/* put the viewer on a white card so the PDF looks crisp in dark mode */}
+    <div className="mt-6 rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-950">
+      <object
+        data="/Mario_s_Resume.pdf"
+        type="application/pdf"
+        className="w-full h-[80vh]"
+        aria-label="Embedded PDF Resume"
+      >
+        <iframe
+          src="/Mario_s_Resume.pdf"
+          className="w-full h-[80vh]"
+          title="Mario Auqui Resume"
+        />
+      </object>
+    </div>
+  </div>
+</section>
 
       {/* Contact */}
-      <section id="contact" className=" bg-gray-100 border-t border-gray-300 dark:bg-gray-900 dark:border-gray-800 ">
+      <section id="contact" className=" max-w-5xl mx-auto px-4 pt-16 pb-16 ">
         <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
           <h2 className="text-2xl font-bold">Contact</h2>
           <p className="mt-2 text-gray-700 dark:text-gray-300">
