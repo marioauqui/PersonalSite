@@ -14,7 +14,7 @@ export default function Home() {
             <nav className="hidden sm:flex gap-6 text-sm">
               <a href="#about" className="hover:opacity-70">About</a>
               <a href="#projects" className="hover:opacity-70">Projects</a>
-              <a href="#research" className="hover:opacity-70">Research</a>
+        
               <a href="#experience" className="hover:opacity-70">Experience</a>
               <a href="#skills" className="hover:opacity-70">Skills</a>
               <a href="#education" className="hover:opacity-70">Education</a>
@@ -192,88 +192,55 @@ export default function Home() {
   </div>
 </section>
 
-      {/* Research */}
-      <section id="research" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-        <h2 className="text-2xl font-bold">Research</h2>
-        <p className="text-gray-600 dark:text-gray-300 mt-2">
-          URECA-funded project in Dr. Pauca’s lab on tropical forest palm detection and domain generalization.
-        </p>
-        <ul className="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
-          <li className="rounded-2xl border border-gray-200 dark:border-gray-800 p-4">Poster: 36×36 in (URECA Day) — results, mAP, PR curves.</li>
-          <li className="rounded-2xl border border-gray-200 dark:border-gray-800 p-4">Paper draft (Overleaf): Introduction → Methodology → Experiments → Results.</li>
-        </ul>
-      </section>
 
-      {/* Experience (resume-style bullets) */}
-      <section id="experience" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-          <h2 className="text-2xl font-bold">Experience</h2>
+{/* Experience Section */}
+<section id="experience" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
+  <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/40 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-700 dark:text-gray-300 space-y-10">
+    <h2 className="text-2xl font-bold mb-6">Experience</h2>
 
-          {/* Research Fellow */}
-          <article className="mt-6 rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="font-semibold">Undergraduate Research Fellow — Wake Forest University</h3>
-              <span className="text-xs text-gray-500">May 2025 – Present • Winston-Salem, NC</span>
-            </div>
-            <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
-              <li>Applied computer vision and object detection to analyze aerial imagery; mapped tree distributions in complex environments.</li>
-              <li>Fine-tuned YOLOv8–YOLOv12 in Python/PyTorch to improve detection under dense canopy and variable lighting.</li>
-              <li>Built scalable data pipelines and labeled 1,200+ image patches with Roboflow to accelerate model training/eval.</li>
-              <li>Collaborated with interdisciplinary faculty; communicated results via technical talks and posters.</li>
-              <li>Experienced with metrics: Precision, Recall, mAP; rigorous analysis and deadlines in a research team.</li>
-            </ul>
-          </article>
+    {/* Research Fellow */}
+    <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h3 className="font-semibold">Undergraduate Research Fellow — Wake Forest University</h3>
+        <span className="text-xs text-gray-500">May 2025 – Present • Winston-Salem, NC</span>
+      </div>
+      <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
+        <li>Applied computer vision and object detection to analyze aerial imagery; mapped tree distributions in complex environments.</li>
+        <li>Fine-tuned YOLOv8–YOLOv12 in Python/PyTorch to improve detection under dense canopy and variable lighting.</li>
+        <li>Built scalable data pipelines and labeled 1,200+ image patches with Roboflow to accelerate model training/eval.</li>
+        <li>Collaborated with interdisciplinary faculty; communicated results via technical talks and posters.</li>
+        <li>Experienced with metrics: Precision, Recall, mAP; rigorous analysis and deadlines in a research team.</li>
+      </ul>
+    </article>
 
-          {/* ML Intern */}
-          <article className="mt-6 rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="font-semibold">Machine Learning Intern — The Clearing House</h3>
-              <span className="text-xs text-gray-500">May 2024 – Aug 2024 • New York, NY</span>
-            </div>
-            <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
-              <li>Built and deployed an AWS SageMaker model to forecast weekly pre-funding requirements for banks.</li>
-              <li>Engineered an end-to-end data pipeline with Python, Jupyter, and S3 on one year of CHIPS transaction data.</li>
-              <li>Achieved 85%+ predictive accuracy through hyperparameter tuning and evaluation; supported operations covering most U.S. wire volume.</li>
-              <li>Presented insights and impact to 50+ stakeholders, including executives and VPs.</li>
-            </ul>
-          </article>
+    {/* ML Intern */}
+    <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h3 className="font-semibold">Machine Learning Intern — The Clearing House</h3>
+        <span className="text-xs text-gray-500">May 2024 – Aug 2024 • New York, NY</span>
+      </div>
+      <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
+        <li>Built and deployed an AWS SageMaker model to forecast weekly pre-funding requirements for banks.</li>
+        <li>Engineered an end-to-end data pipeline with Python, Jupyter, and S3 on one year of CHIPS transaction data.</li>
+        <li>Achieved 85%+ predictive accuracy through hyperparameter tuning and evaluation; supported operations covering most U.S. wire volume.</li>
+        <li>Presented insights and impact to 50+ stakeholders, including executives and VPs.</li>
+      </ul>
+    </article>
 
-          {/* PM Intern */}
-          <article className="mt-6 rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="font-semibold">Project Management Intern — Atlantic General Construction</h3>
-              <span className="text-xs text-gray-500">May 2023 – Aug 2023 • New York, NY</span>
-            </div>
-            <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
-              <li>Led day-to-day project workflows in owner’s absence; delegated tasks and resolved blockers to ensure on-time delivery.</li>
-              <li>Interfaced with clients and cross-functional teams; handled 5–10 weekly inquiries with transparent updates.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+    {/* PM Intern */}
+    <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h3 className="font-semibold">Project Management Intern — Atlantic General Construction</h3>
+        <span className="text-xs text-gray-500">May 2023 – Aug 2023 • New York, NY</span>
+      </div>
+      <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
+        <li>Led day-to-day project workflows in owner’s absence; delegated tasks and resolved blockers to ensure on-time delivery.</li>
+        <li>Interfaced with clients and cross-functional teams; handled 5–10 weekly inquiries with transparent updates.</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-      {/* Skills */}
-      <section id="skills" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-        <h2 className="text-2xl font-bold">Technical Skills</h2>
-        <div className="mt-6 grid md:grid-cols-2 gap-6 text-sm">
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Languages</h3>
-            <p className="text-gray-700 dark:text-gray-300">Python, Java, JavaScript/TypeScript, SQL, C, HTML, CSS, Linux</p>
-          </div>
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Libraries & Frameworks</h3>
-            <p className="text-gray-700 dark:text-gray-300">React, TensorFlow, PyTorch, Keras, Pandas, NumPy, Matplotlib, Flask</p>
-          </div>
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Tools & Methods</h3>
-            <p className="text-gray-700 dark:text-gray-300">AWS, Azure, Docker, Git, Agile/Scrum, Jira, Figma</p>
-          </div>
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Software</h3>
-            <p className="text-gray-700 dark:text-gray-300">MS Office (Excel, Word, PowerPoint, Outlook), Confluence, SharePoint</p>
-          </div>
-        </div>
-      </section>
 
       {/* Education */}
       <section id="education" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Mario Auqui",
-  description: "Portfolio website of Mario Auqui — builder, researcher, and aspiring SWE.",
+  description: "Portfolio website of Mario Auqui ",
 };
 
 export default function RootLayout({
