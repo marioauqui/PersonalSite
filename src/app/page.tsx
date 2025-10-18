@@ -1,12 +1,12 @@
 // src/app/page.tsx
-import ThemeToggle from "@/components/theme-toggle";
+  //import ThemeToggle from "@/components/theme-toggle";
 import Image from "next/image"; // ✅ added
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <main className="min-h-screen bg-gray-100 dark:bg-gray-950 text-gray-800 dark:text-gray-100">
       {/* Navbar */}
-      <header className="sticky top-0 z-20 backdrop-blur bg-gray-50/90 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+      <header className="sticky top-0 z-20 backdrop-blur bg-gray-100/80 dark:bg-gray-900/70 border-b border-gray-300 dark:border-gray-800 shadow-sm">
 
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#home" className="font-extrabold tracking-tight text-lg">Mario Auqui</a>
@@ -21,7 +21,7 @@ export default function Home() {
               <a href="#resume" className="hover:opacity-70">Resume</a>
               <a href="#contact" className="hover:opacity-70">Contact</a>
             </nav>
-            <ThemeToggle />
+          {/*  <ThemeToggle /> */}
           </div>
         </div>
       </header>
@@ -29,14 +29,14 @@ export default function Home() {
       {/* Hero */}
     <section 
       id="home" 
-      className=" bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 relative left-1/2 right-1/2 -mx-[50vw] w-screen">
+      className=" bg-gray-100 dark:bg-gray-900 border-b border-gray-300 dark:border-gray-800 relative left-1/2 right-1/2 -mx-[50vw] w-screen">
       <div className="max-w-7xl mx-auto px-5 pt-16 pb-16">        
         <div className="grid md:grid-cols-4 gap-y-6 md:gap-x-12 items-center">
           <div className="md:col-span-3 md:pr-10">
             <h1 className="text-[1.75rem] md:text-[2.5rem] font-extrabold leading-tight">
               Computer Science and Entrepreneurship              
             </h1>                  
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
              Senior at Wake Forest University with interests in Software Engineering, Artificial Intelligence, and Innovation
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -48,27 +48,27 @@ export default function Home() {
               </a>
               <a
                 href="#contact"
-                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 transition"
+                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 transition"
               >
                 Get in touch
               </a>
               <a
                 href="/Mario_s_Resume.pdf"
-                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 transition"
+                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 transition"
                 target="_blank" rel="noreferrer"
               >
                 Download resume
               </a>
               <a
                 href="https://github.com/marioauqui"
-                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 transition"
+                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 transition"
                 target="_blank" rel="noreferrer"
               >
                 GitHub
               </a>
               <a
                 href="https://linkedin.com/in/marioauqui"
-                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 transition"
+                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 transition"
                 target="_blank" rel="noreferrer"
               >
                 LinkedIn
@@ -76,7 +76,7 @@ export default function Home() {
             </div>     
           </div>
           <div className="md:col-span-1 flex justify-end ml-auto">
-            <div className="aspect-square max-w-[250px] md:max-w-[300px] rounded-3xl border border-gray-200 dark:border-gray-800 shadow-sm grid place-items-center overflow-hidden">
+            <div className="aspect-square w-[220px] sm:w-[240px] md:w-[300px] rounded-3xl border border-gray-300 dark:border-gray-800 shadow-sm overflow-hidden">
               {/* ✅ headshot wired up */}
               <Image
                 src="/headshot.jpg"      // file lives at public/headshot.jpg
@@ -95,7 +95,7 @@ export default function Home() {
 
       {/* About Me */}
 <section id="about" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-  <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-700 dark:text-gray-300 space-y-6">
+  <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-100/80 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-6">
     <h2 className="text-2xl font-bold mb-6">About Me</h2>
 
     <p className="leading-8">
@@ -127,20 +127,20 @@ export default function Home() {
 
 
 {/* Projects */}
-<section id="projects" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+<section id="projects" className="bg-gray-100 border-y border-gray-300 dark:bg-gray-900 dark:border-gray-800">
   <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
     <h2 className="text-2xl font-bold">Projects</h2>
 
     <div className="mt-8 grid md:grid-cols-2 gap-6">
 
       {/* Portfolio Website */}
-      <article className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition">
+      <article className="rounded-2xl border border-gray-300 dark:border-gray-800 p-5 hover:shadow-sm transition">
         <h3 className="font-semibold">Personal Portfolio Website</h3>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+        <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
           Responsive portfolio website built with Next.js, React, and Tailwind CSS to showcase my work,
           projects, and experience. Includes dark mode, smooth animations, and optimized SEO.
         </p>
-        <ul className="mt-3 text-xs text-gray-500 dark:text-gray-400 list-disc pl-5">
+        <ul className="mt-3 text-xs text-gray-600 dark:text-gray-400 list-disc pl-5">
           <li>Next.js, React, Tailwind CSS</li>
           <li>Vercel deployment • Dark/Light theme toggle</li>
           <li>Custom design and animations using Framer Motion</li>
@@ -158,13 +158,13 @@ export default function Home() {
       </article>
 
       {/* PRISM Palm Detection */}
-      <article className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5 hover:shadow-sm transition">
+      <article className="rounded-2xl border border-gray-300 dark:border-gray-800 p-5 hover:shadow-sm transition">
         <h3 className="font-semibold">Palm-Tree Detection — PRISM</h3>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+        <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
           YOLO-based detector tuned to generalize from Ecuador to Iquitos, Peru.
           Focus on patch-based inference and confusion-matrix analysis for improved model performance.
         </p>
-        <ul className="mt-3 text-xs text-gray-500 dark:text-gray-400 list-disc pl-5">
+        <ul className="mt-3 text-xs text-gray-600 dark:text-gray-400 list-disc pl-5">
           <li>mAP, precision/recall, F1</li>
           <li>OpenCV, PyTorch, Ultralytics</li>
         </ul>
@@ -195,16 +195,16 @@ export default function Home() {
 
 {/* Experience Section */}
 <section id="experience" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-  <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/40 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-700 dark:text-gray-300 space-y-10">
+  <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-100/80 dark:bg-gray-900/40 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-10">
     <h2 className="text-2xl font-bold mb-6">Experience</h2>
 
     {/* Research Fellow */}
-    <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
+    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="font-semibold">Undergraduate Research Fellow — Wake Forest University</h3>
         <span className="text-xs text-gray-500">May 2025 – Present • Winston-Salem, NC</span>
       </div>
-      <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
+      <ul className="mt-2 list-disc pl-5 text-sm text-gray-800 dark:text-gray-300 space-y-1.5">
         <li>Applied computer vision and object detection to analyze aerial imagery; mapped tree distributions in complex environments.</li>
         <li>Fine-tuned YOLOv8–YOLOv12 in Python/PyTorch to improve detection under dense canopy and variable lighting.</li>
         <li>Built scalable data pipelines and labeled 1,200+ image patches with Roboflow to accelerate model training/eval.</li>
@@ -214,12 +214,12 @@ export default function Home() {
     </article>
 
     {/* ML Intern */}
-    <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
+    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="font-semibold">Machine Learning Intern — The Clearing House</h3>
         <span className="text-xs text-gray-500">May 2024 – Aug 2024 • New York, NY</span>
       </div>
-      <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
+      <ul className="mt-2 list-disc pl-5 text-sm text-gray-800 dark:text-gray-300 space-y-1.5">
         <li>Built and deployed an AWS SageMaker model to forecast weekly pre-funding requirements for banks.</li>
         <li>Engineered an end-to-end data pipeline with Python, Jupyter, and S3 on one year of CHIPS transaction data.</li>
         <li>Achieved 85%+ predictive accuracy through hyperparameter tuning and evaluation; supported operations covering most U.S. wire volume.</li>
@@ -228,12 +228,12 @@ export default function Home() {
     </article>
 
     {/* PM Intern */}
-    <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
+    <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 transition hover:shadow-md">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="font-semibold">Project Management Intern — Atlantic General Construction</h3>
         <span className="text-xs text-gray-500">May 2023 – Aug 2023 • New York, NY</span>
       </div>
-      <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1.5">
+      <ul className="mt-2 list-disc pl-5 text-sm text-gray-800 dark:text-gray-300 space-y-1.5">
         <li>Led day-to-day project workflows in owner’s absence; delegated tasks and resolved blockers to ensure on-time delivery.</li>
         <li>Interfaced with clients and cross-functional teams; handled 5–10 weekly inquiries with transparent updates.</li>
       </ul>
@@ -243,15 +243,15 @@ export default function Home() {
 
 
       {/* Education */}
-      <section id="education" className="bg-gray-50 border-y border-gray-100 dark:bg-gray-900 dark:border-gray-800">
+      <section id="education" className="bg-gray-100 border-y border-gray-300 dark:bg-gray-900 dark:border-gray-800">
         <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
           <h2 className="text-2xl font-bold">Education</h2>
-          <div className="mt-6 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 text-sm">
+          <div className="mt-6 rounded-2xl border border-gray-300 dark:border-gray-800 p-5 text-sm">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="font-semibold">Wake Forest University — B.S. in Computer Science, Entrepreneurship Minor</h3>
               <span className="text-xs text-gray-500">Dec 2025 • Winston-Salem, NC</span>
             </div>
-            <p className="mt-2 text-gray-700 dark:text-gray-300">Courses: Software Engineering, Neural Networks & Deep Learning, Algorithms & Analysis, Computer Systems II, Web Applications, Computer Vision, Data Structures, Databases, Economics II, Entrepreneurship II & III</p>
+            <p className="mt-2 text-gray-800 dark:text-gray-300">Courses: Software Engineering, Neural Networks & Deep Learning, Algorithms & Analysis, Computer Systems II, Web Applications, Computer Vision, Data Structures, Databases, Economics II, Entrepreneurship II & III</p>
           </div>
         </div>
       </section>
@@ -259,13 +259,13 @@ export default function Home() {
       {/* Resume embed */}
       <section id="resume" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
         <h2 className="text-2xl font-bold">Resume</h2>
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">View or download a recent PDF copy.</p>
+        <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">View or download a recent PDF copy.</p>
         <div className="mt-4 flex gap-3">
           <a
             href="/Mario_s_Resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 text-sm"
+            className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm"
           >
             Open PDF in new tab
           </a>
@@ -277,7 +277,7 @@ export default function Home() {
             Download PDF
           </a>
         </div>
-        <div className="mt-6 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800">
+        <div className="mt-6 rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800">
           {/* Embedded viewer (works best when the PDF is placed in /public) */}
           <object data="/Mario_s_Resume.pdf" type="application/pdf" className="w-full h-[80vh]">
             <iframe src="/Mario_s_Resume.pdf" className="w-full h-[80vh]" title="Mario Auqui Resume" />
@@ -286,12 +286,12 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className=" bg-gray-50 border-t border-gray-200 dark:bg-gray-900 dark:border-gray-800 ">
+      <section id="contact" className=" bg-gray-100 border-t border-gray-300 dark:bg-gray-900 dark:border-gray-800 ">
         <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
           <h2 className="text-2xl font-bold">Contact</h2>
-          <p className="mt-2 text-gray-600 dark:text-gray-300">
-            Email: <a className="underline" href="mailto:marioauqui.contact@gmail.com">marioauqui.contact@gmail.com</a> • {" "}
-            LinkedIn: <a className="underline" href="https://linkedin.com/in/marioauqui" target="_blank" rel="noreferrer">/in/marioauqui</a> • {" "}
+          <p className="mt-2 text-gray-700 dark:text-gray-300">
+            Email: <a className="underline" href="mailto:marioauqui.contact@gmail.com">marioauqui.contact@gmail.com</a> •{" "}
+            LinkedIn: <a className="underline" href="https://linkedin.com/in/marioauqui" target="_blank" rel="noreferrer">/in/marioauqui</a> •{" "}
             GitHub: <a className="underline" href="https://github.com/marioauqui" target="_blank" rel="noreferrer">@marioauqui</a>
           </p>
         </div>
@@ -299,7 +299,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className=" pb-16 pt-10">
-        <div className="max-w-5xl mx-auto px-4 text-xs text-gray-500 dark:text-gray-400">
+        <div className="max-w-5xl mx-auto px-4 text-xs text-gray-600 dark:text-gray-400">
           © {new Date().getFullYear()} Mario Auqui. All rights reserved.
         </div>
       </footer>
