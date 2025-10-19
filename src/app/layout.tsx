@@ -16,16 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marioauqui.com"),
-  title: "Mario Auqui | Personal Site – Wake Forest University",
+  title: "Mario Auqui | Personal Website – Wake Forest University",
   description:
     "Explore the work of Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. NYC-born developer passionate about Machine Learning, AI, and Entrepreneurship.",
 
   openGraph: {
-    title: "Mario Auqui | Personal Site – Wake Forest University",
+    title: "Mario Auqui | Personal Website – Wake Forest University",
     description:
       "Explore projects by Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. NYC-born developer focused on Machine Learning, AI, and Entrepreneurship.",
     url: "https://marioauqui.com",
-    siteName: "Mario Auqui Personal Site",
+    siteName: "Mario Auqui Personal Website",
     images: [
       {
         url: "https://marioauqui.com/mario-auqui-headshot.jpg",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Mario Auqui | Personal Site – Wake Forest University",
+    title: "Mario Auqui | Personal Website – Wake Forest University",
     description:
       "Computer Science student and Research Fellow at Wake Forest University. Passionate about Machine Learning, AI, and Entrepreneurship.",
     images: ["https://marioauqui.com/mario-auqui-headshot.jpg"],
@@ -151,7 +151,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Mario Auqui Personal Site",
+              name: "Mario Auqui Personal Website",
               url: "https://marioauqui.com",
               potentialAction: {
                 "@type": "SearchAction",
