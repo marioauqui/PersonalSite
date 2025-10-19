@@ -35,12 +35,7 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_US",
-    type: "profile", // 👈 Makes OpenGraph treat this as a personal profile
-    profile: {
-      firstName: "Mario",
-      lastName: "Auqui",
-      username: "marioauqui",
-    },
+    type: "profile", // ✅ valid property
   },
 
   twitter: {
@@ -49,7 +44,7 @@ export const metadata: Metadata = {
     description:
       "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU). Bronx-born technologist passionate about Machine Learning, AI, and Entrepreneurship.",
     images: ["https://marioauqui.com/mario-auqui-headshot.jpg"],
-    creator: "@marioauqui", // optional — add if you create an X account
+    creator: "@marioauqui", // optional
   },
 
   icons: {
@@ -68,7 +63,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ✅ Structured data: connects LinkedIn, GitHub, Wake Forest, Bronx, etc. */}
+        {/* ✅ Manual OG profile meta tags (safe & SEO-friendly) */}
+        <meta property="profile:first_name" content="Mario" />
+        <meta property="profile:last_name" content="Auqui" />
+        <meta property="profile:username" content="marioauqui" />
+
+        {/* ✅ Structured data for Google & LinkedIn connection */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -122,7 +122,6 @@ export default function RootLayout({
                 "Next.js",
                 "React",
                 "AI",
-                "Machine Learning",
                 "Computer Vision",
                 "Entrepreneurship",
                 "Data Structures",
@@ -145,7 +144,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* ✅ Optional structured data for your website (helps show “MarioAuqui.com” as official site in Google) */}
+        {/* ✅ Structured data for your website */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
