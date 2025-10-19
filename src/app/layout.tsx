@@ -16,16 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marioauqui.com"),
-  title: "Mario Auqui | Computer Science Portfolio – Wake Forest University",
+  title: "Mario Auqui | Personal Site – Wake Forest University",
   description:
-    "Explore the portfolio of Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. Bronx-born technologist passionate about Web Development, AI, and Entrepreneurship.",
+    "Explore the work of Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. NYC-born developer passionate about Machine Learning, AI, and Entrepreneurship.",
 
   openGraph: {
-    title: "Mario Auqui | Computer Science Portfolio – Wake Forest University",
+    title: "Mario Auqui | Personal Site – Wake Forest University",
     description:
-      "Explore projects by Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. Bronx-born developer focused on Web Development, AI, and Entrepreneurship.",
+      "Explore projects by Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. NYC-born developer focused on Machine Learning, AI, and Entrepreneurship.",
     url: "https://marioauqui.com",
-    siteName: "Mario Auqui Portfolio",
+    siteName: "Mario Auqui Personal Site",
     images: [
       {
         url: "https://marioauqui.com/mario-auqui-headshot.jpg",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Mario Auqui | Computer Science Portfolio",
+    title: "Mario Auqui | Personal Site – Wake Forest University",
     description:
-      "Computer Science student and Research Fellow at Wake Forest University. Bronx-born technologist passionate about Web Development, AI, and Entrepreneurship.",
+      "Computer Science student and Research Fellow at Wake Forest University. Passionate about Machine Learning, AI, and Entrepreneurship.",
     images: ["https://marioauqui.com/mario-auqui-headshot.jpg"],
     creator: "@marioauqui",
   },
@@ -82,7 +82,7 @@ export default function RootLayout({
               image: "https://marioauqui.com/mario-auqui-headshot.jpg",
               jobTitle: "Computer Science Student and Research Fellow",
               description:
-                "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU), originally from the Bronx, New York. Focused on Web Development, AI, and Entrepreneurship.",
+                "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU), originally from the Bronx, New York. Focused on Machine Learning, AI, and Entrepreneurship.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Bronx",
@@ -122,7 +122,7 @@ export default function RootLayout({
                 "Next.js",
                 "React",
                 "AI",
-                "Computer Vision",
+                "Machine Learning",
                 "Entrepreneurship",
                 "Data Structures",
                 "Databases",
@@ -151,7 +151,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Mario Auqui Portfolio",
+              name: "Mario Auqui Personal Site",
               url: "https://marioauqui.com",
               potentialAction: {
                 "@type": "SearchAction",

@@ -135,11 +135,11 @@ export default function Home() {
 
     <div className="mt-8 grid md:grid-cols-2 gap-6">
 
-      {/* Portfolio Website */}
+      {/* Personal Website */}
       <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 hover:shadow-sm transition">
-        <h3 className="text-lg font-semibold">Personal Portfolio Website</h3>
+        <h3 className="text-lg font-semibold">Personal Website</h3>
         <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-          A fully responsive personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS to showcase my work, research, and experience. Designed and developed a clean, professional interface with reusable components, smooth layout transitions, and optimized performance. Deployed and hosted using Vercel.
+          A fully responsive personal website built with Next.js, React, TypeScript, and Tailwind CSS to showcase my work, research, and experience. Designed and developed a clean, professional interface with reusable components, smooth layout transitions, and optimized performance. Deployed and hosted using Vercel.
         </p>
         <ul className="mt-3 text-xs text-gray-600 dark:text-gray-400 list-disc pl-5">
           <li>Developed using Next.js, React, and Tailwind CSS for a modern, responsive layout</li>
