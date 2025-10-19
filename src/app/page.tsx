@@ -260,50 +260,49 @@ export default function Home() {
       <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
         <h3 className="font-semibold mb-2">Programming Languages</h3>
         <p className="text-gray-700 dark:text-gray-300">
-          Python, Java, JavaScript, TypeScript, SQL, MySQL, C, R, HTML, CSS, Bash/Linux
+          Python, Java, JavaScript, TypeScript, SQL, C, R, HTML, CSS, Bash
         </p>
       </div>
 
       {/* Libraries & Frameworks */}
       <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
-        <h3 className="font-semibold mb-2">Libraries & Frameworks</h3>
+        <h3 className="font-semibold mb-2">Libraries &amp; Frameworks</h3>
         <p className="text-gray-700 dark:text-gray-300">
-          React, Next.js, Node.js, Flask, PyTorch, TensorFlow, Keras, Pandas, NumPy, 
-          Matplotlib, Scikit-learn, OpenCV, Gradient Boosting
+          React, Next.js, Node.js, Flask, PyTorch, TensorFlow, Keras, Pandas, NumPy,
+          Matplotlib, scikit-learn, OpenCV, XGBoost
         </p>
       </div>
 
-      {/* Tools & Platforms */}
+      {/* Cloud, DevOps & Tools */}
       <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
-        <h3 className="font-semibold mb-2">Tools & Platforms</h3>
+        <h3 className="font-semibold mb-2">Cloud, DevOps &amp; Tools</h3>
         <p className="text-gray-700 dark:text-gray-300">
           AWS, Azure, Docker, Git, GitHub, Jira, Figma, Vercel, Jupyter Notebook, Roboflow
         </p>
       </div>
 
-      {/* Web & Database Development */}
+      {/* Databases & Back-End */}
       <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
-        <h3 className="font-semibold mb-2">Web & Database Development</h3>
+        <h3 className="font-semibold mb-2">Databases &amp; Back-End</h3>
         <p className="text-gray-700 dark:text-gray-300">
-          Web Applications (React, Next.js, Node.js, REST APIs), MongoDB, MySQL, PostgreSQL,
-          Database Design, SQL Queries, Responsive UI/UX Design
+          PostgreSQL, MySQL, MongoDB, REST API design, Database modeling &amp; normalization,
+          Query optimization
         </p>
       </div>
 
       {/* Software & Productivity */}
       <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
-        <h3 className="font-semibold mb-2">Software & Productivity</h3>
+        <h3 className="font-semibold mb-2">Software &amp; Productivity</h3>
         <p className="text-gray-700 dark:text-gray-300">
-          MS Office (Excel, Word, PowerPoint, Outlook), Confluence, SharePoint, Google Workspace
+          Microsoft Office (Excel, Word, PowerPoint, Outlook), Confluence, SharePoint, Google Workspace
         </p>
       </div>
 
-      {/* Additional Skills */}
+      {/* Additional */}
       <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
-        <h3 className="font-semibold mb-2">Additional Skills</h3>
+        <h3 className="font-semibold mb-2">Additional</h3>
         <p className="text-gray-700 dark:text-gray-300">
-          Fluent in Spanish, Agile/Scrum Methodologies, Data Visualization, 
-          Leadership & Team Collaboration
+          Fluent in Spanish, Agile/Scrum, Data Visualization, Leadership &amp; Team Collaboration
         </p>
       </div>
     </div>
