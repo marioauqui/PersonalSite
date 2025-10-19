@@ -16,14 +16,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marioauqui.com"),
-  title: "Mario Auqui",
+  title: "Mario Auqui | Computer Science Portfolio – Wake Forest University",
   description:
-    "Mario Auqui — Computer Science student and Research Fellow at Wake Forest University (CS @ WFU), originally from the Bronx, New York. Passionate about Machine Learning, AI, Data Science, and Entrepreneurship.",
+    "Explore the portfolio of Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. Bronx-born technologist passionate about Web Development, AI, and Entrepreneurship.",
 
   openGraph: {
-    title: "Mario Auqui — Computer Science Portfolio",
+    title: "Mario Auqui | Computer Science Portfolio – Wake Forest University",
     description:
-      "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU). Bronx-born technologist passionate about Machine Learning, AI, and Entrepreneurship.",
+      "Explore projects by Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. Bronx-born developer focused on Web Development, AI, and Entrepreneurship.",
     url: "https://marioauqui.com",
     siteName: "Mario Auqui Portfolio",
     images: [
@@ -35,16 +35,16 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_US",
-    type: "profile", // ✅ valid property
+    type: "profile",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Mario Auqui — Computer Science Portfolio",
+    title: "Mario Auqui | Computer Science Portfolio",
     description:
-      "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU). Bronx-born technologist passionate about Machine Learning, AI, and Entrepreneurship.",
+      "Computer Science student and Research Fellow at Wake Forest University. Bronx-born technologist passionate about Web Development, AI, and Entrepreneurship.",
     images: ["https://marioauqui.com/mario-auqui-headshot.jpg"],
-    creator: "@marioauqui", // optional
+    creator: "@marioauqui",
   },
 
   icons: {
@@ -63,12 +63,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ✅ Manual OG profile meta tags (safe & SEO-friendly) */}
+        {/* ✅ Profile meta tags (helpful for LinkedIn + Google) */}
         <meta property="profile:first_name" content="Mario" />
         <meta property="profile:last_name" content="Auqui" />
         <meta property="profile:username" content="marioauqui" />
 
-        {/* ✅ Structured data for Google & LinkedIn connection */}
+        {/* ✅ Person schema for search visibility */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -82,7 +82,7 @@ export default function RootLayout({
               image: "https://marioauqui.com/mario-auqui-headshot.jpg",
               jobTitle: "Computer Science Student and Research Fellow",
               description:
-                "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU), originally from the Bronx, New York. Focused on Machine Learning, AI, and Entrepreneurship.",
+                "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU), originally from the Bronx, New York. Focused on Web Development, AI, and Entrepreneurship.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Bronx",
@@ -128,7 +128,7 @@ export default function RootLayout({
                 "Databases",
               ],
               sameAs: [
-                "https://linkedin.com/in/marioauqui", // 👈 LinkedIn connection
+                "https://linkedin.com/in/marioauqui",
                 "https://github.com/marioauqui",
                 "https://marioauqui.com",
               ],
@@ -144,7 +144,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* ✅ Structured data for your website */}
+        {/* ✅ Website schema for Google */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
