@@ -42,7 +42,7 @@ export default function Home() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="px-5 py-3 rounded-2xl border border-gray-900 hover:bg-gray-900 hover:text-white transition dark:border-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900"
+                className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 transition"
               >
                 See projects
               </a>
@@ -96,10 +96,10 @@ export default function Home() {
 {/* About Me */}
 <section id="about" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
   {/* Heading outside and above the card */}
-  <h2 className="text-2xl font-bold mb-4">About Me</h2>
+  <h2 className="text-2xl font-bold ">About Me</h2>
 
   {/* Card content (visually separate) */}
-  <div className="mt-3 rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-100/80 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-6 shadow-sm">
+  <div className="mt-8 rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-6 shadow-sm">
     <p className="leading-8">
       My name is Mario Auqui, and I’m currently a senior at Wake Forest University, graduating in December 2025.
       After graduation, I plan to spend a few months traveling across the country, exploring places like California,
@@ -122,7 +122,7 @@ export default function Home() {
       Outside of work, you can usually find me training at the gym, rolling in Brazilian Jiu-Jitsu, exploring nature,
       reading, or capturing moments on my mirrorless camera. Other times, I’m at a cat café with a good cup of coffee
       or already on the open road, heading toward my next destination. I’m always open to connecting, so feel free
-      to reach out, I’d love to chat!
+      to reach out; I’d love to chat!
     </p>
   </div>
 </section>
@@ -136,23 +136,22 @@ export default function Home() {
     <div className="mt-8 grid md:grid-cols-2 gap-6">
 
       {/* Portfolio Website */}
-      <article className="rounded-2xl border border-gray-300 dark:border-gray-800 p-5 hover:shadow-sm transition">
-        <h3 className="font-semibold">Personal Portfolio Website</h3>
+      <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 hover:shadow-sm transition">
+        <h3 className="text-lg font-semibold">Personal Portfolio Website</h3>
         <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-          Responsive portfolio website built with Next.js, React, and Tailwind CSS to showcase my work,
-          projects, and experience. Includes dark mode, smooth animations, and optimized SEO.
+          A fully responsive personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS to showcase my work, research, and experience. Designed and developed a clean, professional interface with reusable components, smooth layout transitions, and optimized performance. Deployed and hosted using Vercel.
         </p>
         <ul className="mt-3 text-xs text-gray-600 dark:text-gray-400 list-disc pl-5">
-          <li>Next.js, React, Tailwind CSS</li>
-          <li>Vercel deployment • Dark/Light theme toggle</li>
-          <li>Custom design and animations using Framer Motion</li>
+          <li>Developed using Next.js, React, and Tailwind CSS for a modern, responsive layout</li>
+          <li>Hosted on Vercel with optimized build and deployment workflows</li>
+          <li>Designed a clean, professional interface with reusable components and smooth navigation</li>
         </ul>
         <div className="mt-3 flex gap-3 text-sm">
           <a
             href="https://marioauqui.com"
             target="_blank"
             rel="noreferrer"
-            className="underline"
+            className="underline hover:opacity-80"
           >
             Live Site
           </a>
@@ -160,24 +159,27 @@ export default function Home() {
       </article>
 
       {/* PRISM Palm Detection */}
-      <article className="rounded-2xl border border-gray-300 dark:border-gray-800 p-5 hover:shadow-sm transition">
-        <h3 className="font-semibold">Palm-Tree Detection — PRISM</h3>
+      <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5 hover:shadow-sm transition">
+        <h3 className="text-lg font-semibold">Palm-Tree Detection — PRISM</h3>
         <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-          YOLO-based detector tuned to generalize from Ecuador to Iquitos, Peru.
-          Focus on patch-based inference and confusion-matrix analysis for improved model performance.
+          Worked on a research project aimed at improving how computer models identify palm trees in aerial images of tropical forests. The goal was to help monitor forest health and support conservation efforts. Using high-resolution drone imagery, we tested and improved an existing detection model (PRISM) so it could work accurately in new regions, from Ecuador to Iquitos, Peru.
         </p>
+        <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
+  Presented as a poster at <span className="font-medium">URECA Day, Wake Forest University</span>.
+        </p>
+
         <ul className="mt-3 text-xs text-gray-600 dark:text-gray-400 list-disc pl-5">
-          <li>mAP, precision/recall, F1</li>
-          <li>OpenCV, PyTorch, Ultralytics</li>
+          <li>Improved detection accuracy by over 60% through regional fine-tuning</li>
+          <li>Tools: Python, PyTorch, OpenCV, Roboflow, Ultralytics YOLO</li>
         </ul>
         <div className="mt-3 flex gap-3 text-sm">
           <a
             href="/MarioUrecaPoster.pdf"
             target="_blank"
             rel="noreferrer"
-            className="underline"
+            className="underline hover:opacity-80"
           >
-            Poster
+            View Poster
           </a>
           <a
             href="https://photostories.wfu.edu/minds-in-motion"
@@ -198,7 +200,7 @@ export default function Home() {
 {/* Experience Section */}
 <section id="experience" className="max-w-5xl mx-auto px-4 pt-20 pb-20">
   <div className="space-y-10"> {/* Adds spacing between each article */}
-    <h2 className="text-3xl font-bold mb-10">Experience</h2>
+    <h2 className="text-2xl font-bold mb-10">Experience</h2>
 
     {/* Research Fellow */}
     <article className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-6 transition hover:shadow-md">
@@ -246,46 +248,90 @@ export default function Home() {
 
 
 {/* Skills */}
-    <section id="skills" className="bg-gray-100 border-y border-gray-300 dark:bg-gray-900 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-          <div className="">
-        <h2 className="text-2xl font-bold">Skills</h2>
-        <div className="mt-6 grid md:grid-cols-2 gap-6 text-sm">
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Programming Languages</h3>
-            <p className="text-gray-700 dark:text-gray-300">Python, Java, JavaScript/TypeScript, SQL, C, HTML, CSS, HTML, SQL, R Linux</p>
-          </div>
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Libraries & Frameworks</h3>
-            <p className="text-gray-700 dark:text-gray-300">React, TensorFlow, PyTorch, Keras, Pandas, NumPy, Matplotlib, Flask</p>
-          </div>
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Tools & Methods</h3>
-            <p className="text-gray-700 dark:text-gray-300">AWS, Azure, Docker, Git, Agile/Scrum, Jira, Figma</p>
-          </div>
-          <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
-            <h3 className="font-semibold mb-2">Software</h3>
-            <p className="text-gray-700 dark:text-gray-300">MS Office (Excel, Word, PowerPoint, Outlook), Confluence, SharePoint</p>
-          </div>
-        </div>
-        </div>
-        </div>
-      </section>
+<section
+  id="skills"
+  className="bg-gray-100 border-y border-gray-300 dark:bg-gray-900 dark:border-gray-800"
+>
+  <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
+    <h2 className="text-2xl font-bold">Skills</h2>
+
+    <div className="mt-6 grid md:grid-cols-2 gap-6 text-sm">
+      {/* Programming Languages */}
+      <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
+        <h3 className="font-semibold mb-2">Programming Languages</h3>
+        <p className="text-gray-700 dark:text-gray-300">
+          Python, Java, JavaScript, TypeScript, SQL, MySQL, C, R, HTML, CSS, Bash/Linux
+        </p>
+      </div>
+
+      {/* Libraries & Frameworks */}
+      <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
+        <h3 className="font-semibold mb-2">Libraries & Frameworks</h3>
+        <p className="text-gray-700 dark:text-gray-300">
+          React, Next.js, Node.js, Flask, PyTorch, TensorFlow, Keras, Pandas, NumPy, 
+          Matplotlib, Scikit-learn, OpenCV, Gradient Boosting
+        </p>
+      </div>
+
+      {/* Tools & Platforms */}
+      <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
+        <h3 className="font-semibold mb-2">Tools & Platforms</h3>
+        <p className="text-gray-700 dark:text-gray-300">
+          AWS, Azure, Docker, Git, GitHub, Jira, Figma, Vercel, Jupyter Notebook, Roboflow
+        </p>
+      </div>
+
+      {/* Web & Database Development */}
+      <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
+        <h3 className="font-semibold mb-2">Web & Database Development</h3>
+        <p className="text-gray-700 dark:text-gray-300">
+          Web Applications (React, Next.js, Node.js, REST APIs), MongoDB, MySQL, PostgreSQL,
+          Database Design, SQL Queries, Responsive UI/UX Design
+        </p>
+      </div>
+
+      {/* Software & Productivity */}
+      <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
+        <h3 className="font-semibold mb-2">Software & Productivity</h3>
+        <p className="text-gray-700 dark:text-gray-300">
+          MS Office (Excel, Word, PowerPoint, Outlook), Confluence, SharePoint, Google Workspace
+        </p>
+      </div>
+
+      {/* Additional Skills */}
+      <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-5">
+        <h3 className="font-semibold mb-2">Additional Skills</h3>
+        <p className="text-gray-700 dark:text-gray-300">
+          Fluent in Spanish, Agile/Scrum Methodologies, Data Visualization, 
+          Leadership & Team Collaboration
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-      {/* Education */}
-      <section id="education" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-        <div className="max-w-5xl mx-auto px-4 pt-16 pb-16">
-          <h2 className="text-2xl font-bold">Education</h2>
-          <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-6 transition hover:shadow-md">
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="font-semibold">Wake Forest University — B.S. in Computer Science, Entrepreneurship Minor</h3>
-              <span className="text-xs text-gray-500">Dec 2025 • Winston-Salem, NC</span>
-            </div>
-            <p className="mt-2 text-gray-800 dark:text-gray-300">Courses: Software Engineering, Neural Networks & Deep Learning, Algorithms & Analysis, Computer Systems II, Web Applications, Computer Vision, Data Structures, Databases, Economics II, Entrepreneurship II & III</p>
-          </div>
-        </div>
-      </section>
+
+     {/* Education */}
+<section id="education" className="max-w-5xl mx-auto px-4 pt-10 pb-12">
+  <h2 className="text-2xl font-bold mb-6">Education</h2>
+
+  <div className="rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/40 p-6 transition hover:shadow-md leading-relaxed">
+    <div className="flex flex-wrap items-baseline justify-between gap-2">
+      <h3 className="font-semibold text-sm">
+        Wake Forest University — B.S. in Computer Science, Entrepreneurship Minor
+      </h3>
+      <span className="text-sm text-gray-500">Dec 2025 • Winston-Salem, NC</span>
+    </div>
+
+    <p className="mt-3 text-xs text-gray-800 dark:text-gray-300">
+      Software Engineering, Neural Networks & Deep Learning,
+      Algorithms & Analysis, Computer Systems II, Web Applications, Computer Vision, Data Structures,
+      Database Management Systems, Macroeconomics, Scaling the Entrepreneurial Venture, Venture Capital,
+      Evidence-Based Entrepreneurship, Linear Algebra, Data Science & Regression, Calculus I & II
+    </p>
+  </div>
+</section>
 
  {/* Resume — GRAY band (same as Skills/Projects/About) */}
 <section
@@ -295,7 +341,7 @@ export default function Home() {
   <div className="max-w-5xl mx-auto px-4 py-16">
     <h2 className="text-2xl font-bold">Resume</h2>
     <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-      View or download a recent PDF copy.
+      View or download a PDF copy.
     </p>
 
     <div className="mt-4 flex gap-3">
@@ -303,14 +349,14 @@ export default function Home() {
         href="/Mario_s_Resume.pdf"
         target="_blank"
         rel="noreferrer"
-        className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm"
+        className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400"
       >
         Open PDF in new tab
       </a>
       <a
         href="/Mario_s_Resume.pdf"
         download
-        className="px-4 py-2 rounded-xl border border-gray-900 hover:bg-gray-900 hover:text-white dark:border-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 text-sm"
+        className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400"
       >
         Download PDF
       </a>
