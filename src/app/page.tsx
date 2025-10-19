@@ -53,7 +53,7 @@ export default function Home() {
                 Get in touch
               </a>
               <a
-                href="/Mario_s_Resume.pdf"
+                href="/MarioAuquiResume.pdf"
                 className="px-5 py-3 rounded-2xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 transition"
                 target="_blank" rel="noreferrer"
               >
@@ -345,7 +345,7 @@ export default function Home() {
 
     <div className="mt-4 flex gap-3">
       <a
-        href="/Mario_s_Resume.pdf"
+        href="/MarioAuquiResume.pdf"
         target="_blank"
         rel="noreferrer"
         className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400"
@@ -353,7 +353,7 @@ export default function Home() {
         Open PDF in new tab
       </a>
       <a
-        href="/Mario_s_Resume.pdf"
+        href="/MarioAuquiResume.pdf"
         download
         className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400"
       >
@@ -364,13 +364,13 @@ export default function Home() {
     {/* put the viewer on a white card so the PDF looks crisp in dark mode */}
     <div className="mt-6 rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-950">
       <object
-        data="/Mario_s_Resume.pdf"
+        data="/MarioAuquiResume.pdf"
         type="application/pdf"
         className="w-full h-[80vh]"
         aria-label="Embedded PDF Resume"
       >
         <iframe
-          src="/Mario_s_Resume.pdf"
+          src="/MarioAuquiResume.pdf"
           className="w-full h-[80vh]"
           title="Mario Auqui Resume"
         />
