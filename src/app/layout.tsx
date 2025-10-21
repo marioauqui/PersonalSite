@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/providers";
+import Script from "next/script"; // ✅ GA: use Next's Script
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,12 +58,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* ✅ Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WTBEB2HLMD"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WTBEB2HLMD');
+          `}
+        </Script>
+
         {/* ✅ Profile meta tags (helpful for LinkedIn + Google) */}
         <meta property="profile:first_name" content="Mario" />
         <meta property="profile:last_name" content="Auqui" />
