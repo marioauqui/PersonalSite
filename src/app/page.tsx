@@ -37,7 +37,7 @@ export default function Home() {
               Computer Science and Entrepreneurship              
             </h1>                  
             <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
-             Senior at Wake Forest University with interests in Software Engineering, Artificial Intelligence, and Innovation
+             Senior at Wake Forest University (New York City ↔ Winston-Salem, NC)
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -96,34 +96,41 @@ export default function Home() {
 {/* About Me */}
 <section id="about" className="max-w-5xl mx-auto px-4 pt-16 pb-16">
   {/* Heading outside and above the card */}
-  <h2 className="text-2xl font-bold ">About Me</h2>
+  <h2 className="text-2xl font-bold">About Me</h2>
 
   {/* Card content (visually separate) */}
   <div className="mt-8 rounded-2xl border border-gray-300 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/60 backdrop-blur p-8 leading-relaxed text-[1.05rem] text-gray-800 dark:text-gray-300 space-y-6 shadow-sm">
     <p className="leading-8">
-      My name is Mario Auqui, and I’m currently a senior at Wake Forest University, graduating in December 2025.
-      After graduation, I plan to spend a few months traveling across the country, exploring places like California,
-      Texas, and Washington State to meet new people, work on personal projects, and begin a new chapter in my life
-      before starting a full-time role.
+      Hi, my name is Mario Auqui and I am a senior at Wake Forest University,
+      graduating in December 2025.
     </p>
 
     <p className="leading-8">
-      During my time in college, I’ve had the opportunity to work on summer research with a professor using object
-      detection models for Amazon forest conservation, intern at The Clearing House on the Innovation and Machine
-      Learning team, and intern at Atlantic General Construction in project management.
+      After graduation, I plan to spend several months traveling, meeting new
+      people, and working on personal projects before beginning a full-time role.
     </p>
 
     <p className="leading-8">
-      I’d describe myself as someone who loves to learn, constantly asks questions, and enjoys understanding how and
-      why things work. I see myself as a leader, but also as someone who thrives in collaborative environments.
+      For those who don't know me, I'm someone who learns constantly, asks many questions, and enjoys understanding how and why things work.
     </p>
 
     <p className="leading-8">
-      Outside of work, you can usually find me training at the gym, rolling in Brazilian Jiu-Jitsu, exploring nature,
-      reading, or capturing moments on my mirrorless camera. Other times, I’m at a cat café with a good cup of coffee
-      or already on the open road, heading toward my next destination. I’m always open to connecting, so feel free
-      to reach out; I’d love to chat!
+      I’m attracted to new experiences and admire those who push beyond
+      conventional thinking.
     </p>
+
+    <div className="pt-2">
+      <p className="font-semibold mb-3">Things I’m Into:</p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Animals</li>
+        <li>Enjoying and discovering new food</li>
+        <li>Fitness & MMA</li>
+        <li>Outdoor exploration</li>
+        <li>Photography</li>
+        <li>Reading</li>
+        <li>Traveling</li>
+      </ul>
+    </div>
   </div>
 </section>
 
