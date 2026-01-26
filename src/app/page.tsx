@@ -343,39 +343,58 @@ export default function Home() {
       View or download a PDF copy.
     </p>
 
-    <div className="mt-4 flex gap-3">
-      <a
-        href="/MarioAuquiResume.pdf"
-        target="_blank"
-        rel="noreferrer"
-        className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400"
-      >
-        Open PDF in new tab
-      </a>
-      <a
-        href="/MarioAuquiResume.pdf"
-        download
-        className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400"
-      >
-        Download PDF
-      </a>
-    </div>
+    <div className="mt-4">
+  {/* Mobile: single clean button */}
+  <div className="sm:hidden">
+    <a
+      href="/MarioAuquiResume.pdf"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-block px-5 py-3 rounded-2xl border border-gray-300 text-sm font-medium hover:bg-gray-200 transition"
+    >
+      View Resume
+    </a>
+  </div>
 
-    {/* put the viewer on a white card so the PDF looks crisp in dark mode */}
-    <div className="mt-6 rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 bg-white dark:bg-gray-950">
-      <object
-        data="/MarioAuquiResume.pdf"
-        type="application/pdf"
+  {/* Desktop: original buttons */}
+  <div className="hidden sm:flex gap-3">
+    <a
+      href="/MarioAuquiResume.pdf"
+      target="_blank"
+      rel="noreferrer"
+      className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition"
+    >
+      Open PDF in new tab
+    </a>
+    <a
+      href="/MarioAuquiResume.pdf"
+      download
+      className="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 text-sm transition"
+    >
+      Download PDF
+    </a>
+  </div>
+</div>
+
+
+  {/* Resume viewer */}
+  {/* Desktop/tablet: keep the embedded PDF */}
+  <div className="mt-6 hidden sm:block rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-800 bg-white">
+    <object
+      data="/MarioAuquiResume.pdf"
+      type="application/pdf"
+      className="w-full h-[80vh]"
+      aria-label="Embedded PDF Resume"
+    >
+      <iframe
+        src="/MarioAuquiResume.pdf"
         className="w-full h-[80vh]"
-        aria-label="Embedded PDF Resume"
-      >
-        <iframe
-          src="/MarioAuquiResume.pdf"
-          className="w-full h-[80vh]"
-          title="Mario Auqui Resume"
-        />
-      </object>
-    </div>
+        title="Mario Auqui Resume"
+      />
+    </object>
+  </div>
+
+
   </div>
 </section>
 
