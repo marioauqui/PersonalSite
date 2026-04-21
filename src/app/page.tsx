@@ -5,52 +5,20 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "StillRio Web Application",
-    type: "Web",
-    typeColor: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
-    gradientFrom: "from-indigo-400",
-    gradientTo: "to-sky-400",
+    title: "Customer Churn Driver Analysis",
+    type: "Data",
+    typeColor: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
+    gradientFrom: "from-amber-400",
+    gradientTo: "to-orange-400",
     description:
-      "An interactive travel discovery platform to help users explore road trips, destinations, and curated travel content. Features dynamic pages, client-side navigation, and external API integrations for mapping, weather, and location.",
+      "Tools and data source: SQL, Python (Pandas), and customer transaction and account datasets from subscription records.",
     bullets: [
-      "Integrated external APIs for mapping, weather, and location services for real-time travel insights",
-      "Designed responsive layouts and modern UI components for consistent performance across desktop and mobile",
+      "Analyzed churn patterns by segment, tenure, product usage, and support behavior to isolate high-risk customer groups",
+      "Identified key churn drivers and translated findings into retention-focused business recommendations",
+      "Built a Power BI dashboard for churn trend monitoring, cohort comparison, and KPI tracking",
     ],
-    tags: ["React", "Next.js", "TypeScript", "REST APIs", "Tailwind CSS"],
-    links: [{ label: "Live Site", href: "https://stillrio.com" }],
-  },
-  {
-    title: "Developer Portfolio Website",
-    type: "Web",
-    typeColor: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
-    gradientFrom: "from-violet-400",
-    gradientTo: "to-indigo-400",
-    description:
-      "A fully responsive portfolio built with React, Next.js, TypeScript, and Tailwind CSS to showcase technical projects, data analysis work, machine learning research, and professional experience.",
-    bullets: [
-      "Architected reusable UI components and modular page structures for scalable frontend development",
-      "Deployed on Vercel with CI/CD pipelines for automated builds and reliable production hosting",
-    ],
-    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    links: [{ label: "Live Site", href: "https://marioauqui.com" }],
-  },
-  {
-    title: "Palm-Tree Detection — PRISM",
-    type: "ML / CV",
-    typeColor: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
-    gradientFrom: "from-emerald-400",
-    gradientTo: "to-teal-400",
-    description:
-      "Research project improving computer vision models for detecting palm trees in tropical aerial imagery. Processed and structured 1,200+ UAV image samples; improved detection accuracy by over 60% through regional fine-tuning.",
-    bullets: [
-      "Fine-tuned YOLOv8–YOLOv12 pipelines in Python/PyTorch; evaluated using precision, recall, and mAP",
-      "Presented at URECA Day, Wake Forest University",
-    ],
-    tags: ["Python", "PyTorch", "OpenCV", "Roboflow", "YOLO"],
-    links: [
-      { label: "View Poster", href: "/MarioUrecaPoster.pdf" },
-      { label: "WFU Project Page", href: "https://photostories.wfu.edu/minds-in-motion" },
-    ],
+    tags: ["SQL", "Python", "Pandas", "Power BI", "Customer Analytics"],
+    links: [],
   },
   {
     title: "Cancer Incidence & Socioeconomic Analysis",
@@ -59,104 +27,142 @@ const projects = [
     gradientFrom: "from-amber-400",
     gradientTo: "to-orange-400",
     description:
-      "Analyzed public health datasets to examine correlations between cancer incidence rates and median household income across geographic regions using exploratory data analysis.",
+      "Tools and data source: Python (Pandas, NumPy, Matplotlib) with public health and socioeconomic datasets across regions.",
     bullets: [
-      "Performed EDA using Python (Pandas, NumPy) to clean, merge, and analyze socioeconomic and health datasets",
-      "Built Matplotlib visualizations identifying trends between income levels and cancer incidence rates",
+      "Cleaned, merged, and processed multi-source health and income data to prepare a consistent analysis-ready dataset",
+      "Performed exploratory analysis and regression to evaluate how income levels relate to cancer incidence",
+      "Identified a negative correlation between median household income and cancer incidence across geographic regions",
+      "Visualized trends and outliers with comparative charts to communicate findings clearly",
     ],
-    tags: ["Python", "Pandas", "NumPy", "Matplotlib", "EDA"],
+    tags: ["Python", "Pandas", "NumPy", "Regression", "Matplotlib"],
     links: [],
+  },
+  {
+    title: "Palm-Tree Detection — PRISM",
+    type: "Data / CV",
+    typeColor: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
+    gradientFrom: "from-emerald-400",
+    gradientTo: "to-teal-400",
+    description:
+      "Tools and data source: Python, UAV image datasets, and Roboflow-labeled aerial imagery from tropical forest regions.",
+    bullets: [
+      "Processed and structured 1,200+ image samples into labeled datasets for consistent evaluation across regions",
+      "Evaluated model performance using precision, recall, and mAP to compare baseline and tuned results",
+      "Improved detection performance by over 60% after regional tuning and data refinement",
+      "Presented analysis and results at URECA Day, Wake Forest University",
+    ],
+    tags: ["Python", "Data Processing", "Precision/Recall", "mAP", "Roboflow"],
+    links: [
+      { label: "View Poster", href: "/MarioUrecaPoster.pdf" },
+      { label: "WFU Project Page", href: "https://photostories.wfu.edu/minds-in-motion" },
+    ],
+  },
+  {
+    title: "StillRio Web Application",
+    type: "Data / Product",
+    typeColor: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
+    gradientFrom: "from-indigo-400",
+    gradientTo: "to-sky-400",
+    description:
+      "Tools and data source: External APIs for location, weather, and route data integrated into a travel planning dataset.",
+    bullets: [
+      "Processed and normalized API responses to create consistent destination, weather, and route records",
+      "Analyzed travel-related data points to surface useful planning insights for users",
+      "Identified high-value information patterns that improved trip decision support and content relevance",
+    ],
+    tags: ["APIs", "Data Integration", "Data Cleaning", "Analysis"],
+    links: [{ label: "Live Site", href: "https://stillrio.com" }],
+  },
+  {
+    title: "Developer Portfolio Website",
+    type: "Portfolio",
+    typeColor: "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
+    gradientFrom: "from-violet-400",
+    gradientTo: "to-indigo-400",
+    description:
+      "Tools and data source: Portfolio content datasets containing project outcomes, metrics, and technical summaries.",
+    bullets: [
+      "Organized and presented analytics and machine learning projects with concise, insight-driven summaries",
+      "Structured project content to make tools, analysis workflow, and measurable outcomes easy to scan",
+    ],
+    tags: ["Data Storytelling", "Portfolio", "Project Communication"],
+    links: [{ label: "Live Site", href: "https://marioauqui.com" }],
   },
 ];
 
 const experiences = [
   {
-    title: "Undergraduate Research Fellow",
+    title: "Undergraduate Data Research Fellow",
     org: "Wake Forest University",
-    date: "May 2025 – Present",
+    date: "May 2025 – January 2026",
     location: "Winston-Salem, NC",
     bullets: [
-      "Analyzed aerial imagery using computer vision and deep learning to detect and map tree distributions across complex environments.",
-      "Processed and structured UAV imagery into labeled training data using Roboflow, enabling model training across 1,200+ image samples.",
-      "Implemented and optimized object detection pipelines in Python/PyTorch; applied metrics such as precision, recall, and mAP for evaluation.",
-      "Collaborated with interdisciplinary researchers; communicated results through technical presentations and posters.",
+      "Processed and cleaned a large dataset of Amazon rainforest aerial imagery using Python, creating structured labeled datasets for analysis.",
+      "Executed SQL queries to track model experiment results, logging hyperparameters and performance metrics (precision, recall, mAP) across multiple training runs.",
+      "Collaborated with interdisciplinary faculty to design experiments, perform quantitative analysis, and present findings at URECA Day.",
+      "Automated object detection pipeline to identify palm trees in unseen images, reducing manual annotation time and improving reproducibility.",
+      "Built data preprocessing workflows to filter and structure image patches, enabling efficient model training on 1,200+ samples.",
     ],
   },
   {
-    title: "Data and Machine Learning Intern",
+    title: "Data Analyst Intern",
     org: "The Clearing House",
     date: "May 2024 – Aug 2024",
     location: "New York, NY",
     bullets: [
-      "Designed and deployed a machine learning pipeline on AWS SageMaker to analyze financial transaction data and forecast weekly pre-funding requirements for banks processing over 90% of U.S. wire transactions.",
-      "Engineered an end-to-end data pipeline using Python, Pandas, Jupyter Notebook, and Amazon S3 to process and analyze one year of CHIPS transaction data.",
-      "Performed data cleaning, feature engineering, and model evaluation; achieved over 85% forecasting accuracy.",
-      "Presented data-driven insights and model results to 50+ stakeholders, including executives and senior leadership.",
+      "Engineered an end-to-end data pipeline using Python, Pandas, and Jupyter Notebook to process one year of CHIPS financial transaction data, handling missing values and cleaning inconsistent records.",
+      "Leveraged SQL to save model predictions and actual results in a database, making it easy to compare performance across models.",
+      "Cleaned and prepared transactional data, then built a forecast that achieved over 85% accuracy for banks processing 90% of U.S. wire transactions.",
+      "Presented model results and insights to 50+ stakeholders including executives and senior leadership as part of the final project.",
     ],
   },
   {
-    title: "Project Management Intern",
+    title: "Operations Data Intern",
     org: "Atlantic General Construction",
     date: "May 2023 – Aug 2023",
     location: "New York, NY",
     bullets: [
-      "Coordinated project workflows and tracked operational data across multiple teams to ensure construction projects remained on schedule and aligned with client requirements.",
-      "Analyzed operational issues to identify root causes and resolve blockers; interfaced with clients and cross-functional teams to provide transparent updates.",
+      "Used Excel to track project timelines, budgets, and client requirements, maintaining organized spreadsheets for daily workflow management and reporting.",
+      "Communicated with clients and cross-functional teams to gather requirements, document progress, and resolve 5–10 weekly inquiries, ensuring project transparency and stakeholder satisfaction.",
+      "Analyzed project data in Excel to identify workflow bottlenecks, reducing task completion delays by approximately 17% through targeted process improvements.",
     ],
   },
 ];
 
 const skillCategories = [
   {
-    label: "Languages",
+    label: "Data Analysis & Visualization",
     color: "bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300",
     dot: "bg-indigo-500",
-    skills: ["Python", "JavaScript", "TypeScript", "SQL", "Java", "C", "R", "HTML", "CSS", "Bash"],
+    skills: ["Pandas", "NumPy", "Excel", "Tableau", "Power BI", "Matplotlib", "Seaborn"],
   },
   {
-    label: "Frontend & Web",
+    label: "Programming & Query Languages",
     color: "bg-sky-50 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300",
     dot: "bg-sky-500",
-    skills: ["React", "Next.js", "Node.js", "Tailwind CSS", "Flask", "REST APIs", "Responsive Design"],
-  },
-  {
-    label: "Data & Machine Learning",
-    color: "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
-    dot: "bg-emerald-500",
-    skills: ["PyTorch", "TensorFlow", "Keras", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn", "OpenCV", "XGBoost", "Ultralytics YOLO"],
-  },
-  {
-    label: "Cloud & DevOps",
-    color: "bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
-    dot: "bg-orange-500",
-    skills: ["AWS", "Azure", "Docker", "Git", "GitHub", "Vercel", "Linux", "Jupyter Notebook", "Roboflow", "Jira", "Figma"],
+    skills: ["Python", "SQL", "R", "JavaScript", "TypeScript", "Java", "C", "Bash"],
   },
   {
     label: "Databases",
-    color: "bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300",
-    dot: "bg-violet-500",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Database modeling", "Query optimization"],
+    color: "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+    dot: "bg-emerald-500",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Query Optimization", "Data Modeling"],
   },
   {
-    label: "Methods & Other",
-    color: "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400",
-    dot: "bg-gray-400",
-    skills: ["EDA", "Feature engineering", "Data visualization", "Statistical analysis", "CI/CD", "Agile/Scrum", "API integration", "Fluent in Spanish"],
+    label: "Analytical Techniques",
+    color: "bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
+    dot: "bg-orange-500",
+    skills: ["Data Cleaning", "EDA", "Regression Analysis", "Hypothesis Testing", "A/B Testing"],
+  },
+  {
+    label: "Tools & Technologies",
+    color: "bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300",
+    dot: "bg-violet-500",
+    skills: ["Jupyter Notebook", "Excel", "Git"],
   },
 ];
 
-const resumes = [
-  {
-    title: "Frontend Resume",
-    downloadHref: "/api/download-resume?type=frontend",
-    description: "Best for software engineering and frontend-focused roles.",
-  },
-  {
-    title: "Data Analyst Resume",
-    downloadHref: "/api/download-resume?type=data-analyst",
-    description: "Best for analytics, data, and machine learning roles.",
-  },
-];
+const resumeHref = "/MarioAuquiResume.pdf";
 
 /* ─────────── PAGE ─────────── */
 
@@ -210,12 +216,12 @@ export default function Home() {
 
               {/* Role */}
               <p className="animate-fade-up delay-300 mt-3 text-xl md:text-2xl font-medium text-indigo-600 dark:text-indigo-400">
-                Frontend Engineer &amp; Data Analyst
+                Data Analyst
               </p>
 
               {/* Subtitle */}
               <p className="animate-fade-up delay-400 mt-3 text-base text-gray-500 dark:text-gray-400">
-                Recent grad from Wake Forest University · New York City ↔ Winston-Salem, NC
+                Recent grad from Wake Forest University · New York City
               </p>
 
               {/* CTA buttons */}
@@ -236,7 +242,7 @@ export default function Home() {
                   href="#resume"
                   className="px-5 py-2.5 rounded-xl border border-gray-300 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:hover:border-indigo-600 dark:hover:text-indigo-400 text-sm font-medium transition-colors"
                 >
-                  View resumes
+                  View resume
                 </a>
                 <a
                   href="https://github.com/marioauqui"
@@ -284,7 +290,7 @@ export default function Home() {
             I&apos;m currently traveling, meeting new people, and working on personal projects before beginning a full-time role.
           </p>
           <p className="leading-8">
-            For those who don&apos;t know me, I&apos;m someone who learns constantly, asks many questions, and enjoys understanding how and why things work.
+            For those who don&apos;t know me, I&apos;m naturally curious, ask many questions, and love understanding how and why things work. I also enjoy adventure and trying new things.
           </p>
           <p className="leading-8">
             I&apos;m attracted to new experiences and admire those who push beyond conventional thinking.
@@ -292,13 +298,12 @@ export default function Home() {
           <div className="pt-1">
             <p className="font-semibold mb-3 text-gray-800 dark:text-gray-100">Things I&apos;m Into:</p>
             <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
-              <li>Animals</li>
-              <li>Discovering new food</li>
               <li>Fitness &amp; MMA</li>
-              <li>Outdoor exploration</li>
+              <li>Discovering new food/cuisines</li>
+              <li>Animals</li>
               <li>Photography</li>
-              <li>Reading</li>
-              <li>Traveling</li>
+              <li>Outdoor exploration</li>
+              <li>Thriller books</li>
             </ul>
           </div>
         </div>
@@ -475,21 +480,17 @@ export default function Home() {
             </p>
             <div className="mt-2 flex flex-wrap gap-1.5">
               {[
-                "Software Engineering",
-                "Neural Networks & Deep Learning",
-                "Algorithms & Analysis",
-                "Computer Systems II",
-                "Web Applications",
-                "Computer Vision",
-                "Data Structures",
-                "Database Management Systems",
-                "Data Science & Regression",
+                "SQL & Database Management",
+                "Python for Data Analysis",
+                "Probability & Statistics",
+                "Regression Analysis",
+                "Data Visualization",
+                "Data Science",
                 "Linear Algebra",
-                "Scaling the Entrepreneurial Venture",
-                "Venture Capital",
-                "Evidence-Based Entrepreneurship",
-                "Macroeconomics",
                 "Calculus I & II",
+                "Data Structures",
+                "Algorithms & Analysis",
+                "Computer Systems",
               ].map((course) => (
                 <span
                   key={course}
@@ -511,25 +512,20 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 py-20">
           <h2 className="font-display text-3xl font-bold">Resume</h2>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Choose the version that best fits the role you are applying for.
+            Download my latest resume.
           </p>
 
-          <div className="mt-6 grid sm:grid-cols-2 gap-5">
-            {resumes.map((resume) => (
-              <article
-                key={resume.title}
-                className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 shadow-sm hover:shadow-md transition-shadow"
+          <div className="mt-6">
+            <article className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-display text-lg font-bold text-gray-900 dark:text-gray-100">Mario Auqui Resume</h3>
+              <a
+                href={resumeHref}
+                download
+                className="mt-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium transition-colors"
               >
-                <h3 className="font-display text-lg font-bold text-gray-900 dark:text-gray-100">{resume.title}</h3>
-                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{resume.description}</p>
-                <a
-                  href={resume.downloadHref}
-                  className="mt-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium transition-colors"
-                >
-                  Download Resume
-                </a>
-              </article>
-            ))}
+                Download Resume
+              </a>
+            </article>
           </div>
         </div>
       </section>
