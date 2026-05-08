@@ -259,7 +259,7 @@ export default function Home() {
             <div className="animate-fade-up delay-300 md:col-span-1 flex justify-end ml-auto">
               <div className="aspect-square w-[200px] sm:w-[220px] md:w-[260px] rounded-3xl border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden ring-4 ring-indigo-50 dark:ring-indigo-900/20">
                 <Image
-                  src="/mario-auqui-headshot.png"
+                  src="/mario-auqui-headshot.jpg"
                   alt="Mario Auqui professional headshot portrait"
                   width={1200}
                   height={1200}
