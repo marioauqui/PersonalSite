@@ -203,12 +203,6 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-y-10 md:gap-x-14 items-center">
             <div className="md:col-span-3">
 
-              {/* Status badge */}
-              <span className="animate-fade-up delay-100 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-300 dark:border-indigo-800 mb-5">
-                <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />
-                Open to Opportunities
-              </span>
-
               {/* Name */}
               <h1 className="animate-fade-up delay-200 font-display text-5xl md:text-7xl font-bold leading-tight tracking-tight">
                 Mario Auqui
@@ -265,7 +259,7 @@ export default function Home() {
             <div className="animate-fade-up delay-300 md:col-span-1 flex justify-end ml-auto">
               <div className="aspect-square w-[200px] sm:w-[220px] md:w-[260px] rounded-3xl border border-gray-200 dark:border-gray-800 shadow-md overflow-hidden ring-4 ring-indigo-50 dark:ring-indigo-900/20">
                 <Image
-                  src="/mario-auqui-headshot.jpg"
+                  src="/mario-auqui-headshot.png"
                   alt="Mario Auqui professional headshot portrait"
                   width={1200}
                   height={1200}
