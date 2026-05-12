@@ -58,22 +58,6 @@ const projects = [
     ],
   },
   {
-    title: "StillRio Web Application",
-    type: "Data / Product",
-    typeColor: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300",
-    gradientFrom: "from-indigo-400",
-    gradientTo: "to-sky-400",
-    description:
-      "Tools and data source: External APIs for location, weather, and route data integrated into a travel planning dataset.",
-    bullets: [
-      "Processed and normalized API responses to create consistent destination, weather, and route records",
-      "Analyzed travel-related data points to surface useful planning insights for users",
-      "Identified high-value information patterns that improved trip decision support and content relevance",
-    ],
-    tags: ["APIs", "Data Integration", "Data Cleaning", "Analysis"],
-    links: [{ label: "Live Site", href: "https://stillrio.com" }],
-  },
-  {
     title: "Developer Portfolio Website",
     type: "Portfolio",
     typeColor: "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300",

@@ -23,14 +23,14 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marioauqui.com"),
-  title: "Mario Auqui | Personal Website – Wake Forest University",
+  title: "Mario Auqui | Personal Website",
   description:
-    "Explore the work of Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. NYC-born developer passionate about Machine Learning, AI, and Entrepreneurship.",
+    "Portfolio of Mario Auqui, a data analyst focused on analytics, visualization, and turning complex datasets into clear insights.",
 
   openGraph: {
-    title: "Mario Auqui | Personal Website – Wake Forest University",
+    title: "Mario Auqui | Personal Website",
     description:
-      "Explore projects by Mario Auqui, a Computer Science student and Research Fellow at Wake Forest University. NYC-born developer focused on Machine Learning, AI, and Entrepreneurship.",
+      "Projects and experience in data analysis, visualization, and analytics—from exploratory work through dashboards and reporting.",
     url: "https://marioauqui.com",
     siteName: "Mario Auqui Personal Website",
     images: [
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Mario Auqui | Personal Website – Wake Forest University",
+    title: "Mario Auqui | Personal Website",
     description:
-      "Computer Science student and Research Fellow at Wake Forest University. Passionate about Machine Learning, AI, and Entrepreneurship.",
+      "Data analyst portfolio: analytics, visualization, and practical insights from real-world datasets.",
     images: ["https://marioauqui.com/mario-auqui-headshot.jpg"],
     creator: "@marioauqui",
   },
@@ -99,51 +99,16 @@ export default function RootLayout({
               familyName: "Auqui",
               url: "https://marioauqui.com",
               image: "https://marioauqui.com/mario-auqui-headshot.jpg",
-              jobTitle: "Computer Science Student and Research Fellow",
+              jobTitle: "Data Analyst",
               description:
-                "Computer Science student and Research Fellow at Wake Forest University (CS @ WFU), originally from the Bronx, New York. Focused on Machine Learning, AI, and Entrepreneurship.",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Bronx",
-                addressRegion: "New York",
-                addressCountry: "United States",
-              },
-              affiliation: [
-                {
-                  "@type": "CollegeOrUniversity",
-                  name: "Wake Forest University",
-                  url: "https://wfu.edu",
-                },
-                {
-                  "@type": "HighSchool",
-                  name: "Monsignor Scanlan High School",
-                  address: {
-                    "@type": "PostalAddress",
-                    addressLocality: "Bronx",
-                    addressRegion: "New York",
-                  },
-                },
-              ],
-              alumniOf: [
-                {
-                  "@type": "CollegeOrUniversity",
-                  name: "Wake Forest University",
-                  sameAs: "https://wfu.edu",
-                },
-                {
-                  "@type": "HighSchool",
-                  name: "Monsignor Scanlan High School",
-                },
-              ],
+                "Data analyst building clear analysis, dashboards, and reporting from complex datasets.",
               knowsAbout: [
-                "Computer Science",
-                "Web Development",
-                "Next.js",
-                "React",
-                "AI",
-                "Machine Learning",
-                "Entrepreneurship",
-                "Data Structures",
+                "Data Analysis",
+                "Data Visualization",
+                "SQL",
+                "Python",
+                "Business Intelligence",
+                "Statistics",
                 "Databases",
               ],
               sameAs: [
@@ -151,10 +116,6 @@ export default function RootLayout({
                 "https://github.com/marioauqui",
                 "https://marioauqui.com",
               ],
-              worksFor: {
-                "@type": "Organization",
-                name: "Wake Forest University",
-              },
               mainEntityOfPage: {
                 "@type": "WebPage",
                 "@id": "https://marioauqui.com",
